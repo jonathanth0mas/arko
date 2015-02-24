@@ -2,9 +2,11 @@ class CreateItems < ActiveRecord::Migration
   def change
     create_table :items do |t|
       t.string :name
-      t.string :small
-      t.string :medium
-      t.string :large
+      t.float :small
+      t.float :medium
+      t.float :large
+      t.float :each
+      t.string :misc
       t.string :dish
 
       t.timestamps null: false

@@ -18,9 +18,11 @@ ActiveRecord::Schema.define(version: 20150224201149) do
 
   create_table "items", force: :cascade do |t|
     t.string   "name"
-    t.string   "small"
-    t.string   "medium"
-    t.string   "large"
+    t.float    "small"
+    t.float    "medium"
+    t.float    "large"
+    t.float    "each"
+    t.string   "misc"
     t.string   "dish"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
