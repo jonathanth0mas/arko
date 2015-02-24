@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20150224201149) do
     t.string   "small"
     t.string   "medium"
     t.string   "large"
-    t.string   "type"
+    t.string   "dish"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

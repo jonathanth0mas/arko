@@ -5,7 +5,7 @@ class CreateItems < ActiveRecord::Migration
       t.string :small
       t.string :medium
       t.string :large
-      t.string :type
+      t.string :dish
 
       t.timestamps null: false
     end
