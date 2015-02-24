@@ -2,9 +2,10 @@ class CreateItems < ActiveRecord::Migration
   def change
     create_table :items do |t|
       t.string :name
-      t.string :size
-      t.string :price
-      t.integer :qty
+      t.string :small
+      t.string :medium
+      t.string :large
+      t.string :type
 
       t.timestamps null: false
     end
