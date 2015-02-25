@@ -8,6 +8,7 @@
 
 Item.destroy_all
 
+# Vegetable
 Item.create(name: "ADOBONG KANGKONG", misc: "MARKET PRICE", dish: "Vegetable")
 Item.create(name: "ADOBONG SITAW", small: 27, medium: 50, large: 95, dish: "Vegetable")
 Item.create(name: "AMPALAYA CON KARNE", small: 27, medium: 50, large: 95, dish: "Vegetable")
@@ -36,6 +37,8 @@ Item.create(name: "SITAW WITH BEEF TAUSI", small: 30, medium: 55, large: 105, di
 Item.create(name: "VEGETABLE BICOL EXPRESS", small: 30, medium: 55, large: 105, dish: "Vegetable")
 Item.create(name: "VEGETABLE WITH PORK & TOFU", small: 27, medium: 50, large: 95, dish: "Vegetable")
 Item.create(name: "ZUCCHINI WITH SHRIMP & QUAIL EGGS", small: 30, medium: 55, large: 105, dish: "Vegetable")
+
+# Pork
 Item.create(name: "PORK ADOBO", small: 27, medium: 50, large: 95, dish: "Pork")
 Item.create(name: "PORK AFRITADA", small: 27, medium: 50, large: 95, dish: "Pork")
 Item.create(name: "PORK ASADO", small: 30, medium: 55, large: 105, dish: "Pork")
@@ -66,6 +69,67 @@ Item.create(name: "SISIG LECHON KAWALI", small: 37, medium: 70, large: 135, dish
 Item.create(name: "SISIG ORIGINAL", medium: 70, large: 135, dish: "Pork")
 Item.create(name: "SIZZLING PORK", small: 42, medium: 80, large: 155, dish: "Pork")
 Item.create(name: "SWEET & SOUR PORK", small: 27, medium: 50, large: 95, dish: "Pork")
+
+# Noodle
+Item.create(name: "BIHON GUISADO", small: 20, medium: 38, large: 75, dish: "Noodle")
+Item.create(name: "CANTON GUISADO", small: 20, medium: 38, large: 75, dish: "Noodle")
+Item.create(name: "LOMI", small: 25, medium: 45, large: 85, dish: "Noodle")
+Item.create(name: "MIKI/BIHON GUISADO", small: 20, medium: 38, large: 75, dish: "Noodle")
+Item.create(name: "MIKI GUISADO", small: 20, medium: 38, large: 75, dish: "Noodle")
+Item.create(name: "PALABOK", small: 25, medium: 45, large: 85, dish: "Noodle")
+Item.create(name: "PALABOK (THIN NOODLES)", small: 25, medium: 45, large: 85, dish: "Noodle")
+Item.create(name: "SOTANGHON GUISADO", small: 20, medium: 38, large: 75, dish: "Noodle")
+Item.create(name: "SOTANGHON SOUP WITH CHICKEN", small: 20, medium: 38, large: 75, dish: "Noodle")
+Item.create(name: "SPAGHETTI", small: 27, medium: 48, large: 90, dish: "Noodle")
+Item.create(name: "STEAMED MISUA", small: 20, medium: 38, large: 75, dish: "Noodle")
+
+# Beef
+Item.create(name: "BEEF ADOBO", small: 32, medium: 60, large: 115, dish: "Beef")
+Item.create(name: "BEEF AFRITADA", small: 30, medium: 55, large: 105, dish: "Beef")
+Item.create(name: "BEEF ASADO", small: 32, medium: 60, large: 115, dish: "Beef")
+Item.create(name: "BEEF STEAK", small: 30, medium: 55, large: 105, dish: "Beef")
+Item.create(name: "BEEF CALLOS", small: 30, medium: 55, large: 105, dish: "Beef")
+Item.create(name: "BEEF CALDERETA", small: 30, medium: 55, large: 105, dish: "Beef")
+Item.create(name: "BEEF STEW WITH LABANOS", small: 30, medium: 55, large: 105, dish: "Beef")
+Item.create(name: "BEEF PAPAITAN", small: 32, medium: 60, large: 115, dish: "Beef")
+Item.create(name: "BEEF PEPPER STEAK", small: 32, medium: 60, large: 115, dish: "Beef")
+Item.create(name: "BEEF POCHERO", small: 30, medium: 55, large: 105, dish: "Beef")
+Item.create(name: "BEEF SINIGANG", small: 30, medium: 55, large: 105, dish: "Beef")
+Item.create(name: "FRIED BEEF RIBS", small: 32, medium: 60, large: 115, dish: "Beef")
+Item.create(name: "KARE KARE OX-TAIL", small: 30, medium: 55, large: 105, dish: "Beef")
+Item.create(name: "KOREAN BBQ", misc: "BASED ON SIZE", dish: "Beef")
+Item.create(name: "LENGUA WITH CREAM SAUCE", small: 32, medium: 60, large: 115, dish: "Beef")
+Item.create(name: "LENGUA WITH TOMATO SAUCE", small: 32, medium: 60, large: 115, dish: "Beef")
+Item.create(name: "NILAGANG BULALO", small: 30, medium: 55, large: 105, dish: "Beef")
+Item.create(name: "ROAST BEEF", medium: 80, large: 155, dish: "Beef")
+
+# Chicken
+Item.create(name: "CHICKEN ADOBO", small: 25, medium: 45, large: 85, dish: "Chicken")
+Item.create(name: "CHICKEN AFRITADA", small: 25, medium: 45, large: 85, dish: "Chicken")
+Item.create(name: "CHICKEN BBQ LEGS", misc: "BASED ON SIZE", dish: "Chicken")
+Item.create(name: "CHICKEN BBQ ON STICK", misc: "MARKET PRICE", dish: "Chicken")
+Item.create(name: "CHICKEN CURRY", small: 25, medium: 45, large: 85, dish: "Chicken")
+Item.create(name: "CHICKEN EMBOTIDO", each: 6.5, dish: "Chicken")
+Item.create(name: "CHICKEN EMPANADA", misc: "MARKET PRICE", dish: "Chicken")
+Item.create(name: "CHICKEN FILET WITH MUSHROOM", small: 30, medium: 55, large: 105, dish: "Chicken")
+Item.create(name: "FRIED CHICKEN LEG & THIGH (REGULAR)", each: 3.5, dish: "Chicken")
+Item.create(name: "FRIED CHICKEN LEG & THIGH (SAVORY)", each: 3.5, dish: "Chicken")
+Item.create(name: "CHICKEN LOLLIPOP", medium: 55, large: 105, dish: "Chicken")
+Item.create(name: "CHICKEN NILAGA", small: 25, medium: 45, large: 85, dish: "Chicken")
+Item.create(name: "KIRIAM (CHICKEN)", each: 3.5, dish: "Chicken")
+Item.create(name: "ORANGE CHICKEN", small: 30, medium: 55, large: 105, dish: "Chicken")
+Item.create(name: "CHICKEN PASTEL", small: 25, medium: 45, large: 85, dish: "Chicken")
+Item.create(name: "PINEAPPLE CHICKEN", small: 25, medium: 45, large: 85, dish: "Chicken")
+Item.create(name: "CHICKEN POCHERO", small: 25, medium: 45, large: 85, dish: "Chicken")
+Item.create(name: "CHICKEN SINAMPALUKAN", small: 25, medium: 45, large: 85, dish: "Chicken")
+Item.create(name: "SPICY CHICKEN WINGS", small: 30, medium: 55, large: 105, dish: "Chicken")
+Item.create(name: "CHICKEN TINOLA", small: 25, medium: 45, large: 85, dish: "Chicken")
+Item.create(name: "SWEET & SOUR CHICKEN FILLET", small: 30, medium: 55, large: 105, dish: "Chicken")
+Item.create(name: "CHICKEN TERIYAKI FILLET", small: 30, medium: 55, large: 105, dish: "Chicken")
+
+
+
+
 
 
 
