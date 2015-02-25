@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20150224201149) do
     t.float    "each"
     t.string   "misc"
     t.string   "dish"
+    t.string   "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
