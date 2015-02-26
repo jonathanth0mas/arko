@@ -1,0 +1,1 @@
+DISH = ["Vegetable", "Pork", "Noodle", "Beef", "Chicken"]
