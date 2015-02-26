@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
     user = User.where(email: params[:login][:email]).first
     if user && user.authenticate(params[:login][:password])
       log_in(user)
+      redirect_to root_path
       # if user.admin == true
       #   redirect_to pickups_path(user)
       # else
