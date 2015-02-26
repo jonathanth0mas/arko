@@ -1,0 +1,21 @@
+<h3>Welcome Kapamilya!</h3>
+
+
+<%= form_for :login do |f| %>
+
+<div>
+	<%= f.label :email %>
+	<%= f.text_field :email %>
+</div>
+
+
+<div>
+	<%= f.label :password %>
+	<%= f.password_field :password %>
+</div>
+
+<div>
+	<%= f.submit "Sign In!" %>
+</div>
+
+<% end %>
