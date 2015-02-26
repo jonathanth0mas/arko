@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'carts/show'
+
+  get 'order_items/create'
+
+  get 'order_items/update'
+
+  get 'order_items/destroy'
+
   root 'static_pages#home'
 
   resources :users, only: [:create, :edit, :update]
