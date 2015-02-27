@@ -1,0 +1,3 @@
+<% @order_items.each do |order_item| %>
+	<%= render 'shared/cart_row', item: order_item.item, order_item: order_item %>
+<% end %>

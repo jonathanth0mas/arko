@@ -5,6 +5,7 @@
 	<nav>
 		<div><%= link_to "Food", items_path %></div>
 		<div><%= link_to "Log Out", logout_path, method: :delete %></div>
+		<div><%= link_to "#{current_order.order_items.size} Items in Order", cart_path(current_order) %></div>
 	</nav>
 </header>
 

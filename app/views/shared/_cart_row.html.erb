@@ -1,0 +1,8 @@
+<%= item.name %>
+
+<%= form_for order_item, remote: true do |f| %>
+
+	<%= f.number_field :quantity, value: order_item.quantity.to_i %>
+	<%= f.hidden_field :product_id, value: product.id %>
+	<%= f.submit "Update quantity" %>
+<% end %>
