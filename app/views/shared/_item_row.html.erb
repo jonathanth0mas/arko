@@ -1,15 +1,10 @@
 <%= item.name %>
 
-<%= form_tag(items_path, method: 'get') do %>
-
-	<%= select_tag "size", options_for_select({"Small - $#{item.small}" => "#{item.small}" , "Medium - $#{item.medium}" => "#{item.medium}" , "Large - $#{item.large}" => "#{item.large}", "Each - $#{item.each}" => "#{item.each}", "#{item.misc}" => "#{item.misc}"}) %>
-
-<% end %>
-
 <%= form_for order_item, remote: true do |f| %>
 
 	<%= f.number_field :quantity, value: 1, min: 1 %>
 	<%= f.hidden_field :item_id, value: item.id %>
-	<%= f.submit "Add to Order" %>
+	<%= f.select :size, options_for_select({"Small - $#{item.small}" => "Small", "Medium - $#{item.medium}" => "Medium", "Large - $#{item.large}" => "Large"}) %>
+ 	<%= f.submit "Add to Order" %>
 
 <% end %>

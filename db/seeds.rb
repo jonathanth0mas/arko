@@ -31,11 +31,11 @@ Item.create(name: "GINATAANG SITAW WITH SHRIMP & CRAB", small: 30, medium: 55, l
 Item.create(name: "GREEN PEAS WITH CASHEW & SHRIMP", small: 27, medium: 50, large: 95, dish: "Vegetable", active: true)
 Item.create(name: "KILAWING PUSO NG SAGING", small: 30, medium: 55, large: 105, dish: "Vegetable", active: true)
 Item.create(name: "LAING", small: 30, medium: 55, large: 105, dish: "Vegetable", active: true)
-Item.create(name: "MIXED VEGETABLE , active: trueWITH SHRIMP AND QUAIL EGGS", small: 27, medium: 50, large: 95, dish: "Vegetable", active: true)
+Item.create(name: "MIXED VEGETABLE WITH SHRIMP AND QUAIL EGGS", small: 27, medium: 50, large: 95, dish: "Vegetable", active: true)
 Item.create(name: "PINAKBET", small: 27, medium: 50, large: 95, dish: "Vegetable", active: true)
 Item.create(name: "SITAW WITH BEEF TAUSI", small: 30, medium: 55, large: 105, dish: "Vegetable", active: true)
-Item.create(name: "VEGETABLE , active: trueBICOL EXPRESS", small: 30, medium: 55, large: 105, dish: "Vegetable", active: true)
-Item.create(name: "VEGETABLE , active: trueWITH PORK & TOFU", small: 27, medium: 50, large: 95, dish: "Vegetable", active: true)
+Item.create(name: "VEGETABLE BICOL EXPRESS", small: 30, medium: 55, large: 105, dish: "Vegetable", active: true)
+Item.create(name: "VEGETABLE WITH PORK & TOFU", small: 27, medium: 50, large: 95, dish: "Vegetable", active: true)
 Item.create(name: "ZUCCHINI WITH SHRIMP & QUAIL EGGS", small: 30, medium: 55, large: 105, dish: "Vegetable", active: true)
 
 # Pork
