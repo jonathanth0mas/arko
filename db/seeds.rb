@@ -218,23 +218,43 @@ Item.create(name: "LECHON (ROAST-PIG)", misc: "18 per lb", dish: "Lechon (Roast-
 
 # Desserts 
 # Comes In (serving tray)
-Item.create(name: "", half: , full: , dish: "")
-Item.create(name: "", half: , full: , dish: "")
-Item.create(name: "", half: , full: , dish: "")
-Item.create(name: "", half: , full: , dish: "")
-Item.create(name: "", half: , full: , dish: "")
-Item.create(name: "", half: , full: , dish: "")
-Item.create(name: "", half: , full: , dish: "")
+Item.create(name: "ASSORTED KAKANIN", full: 35, dish: "Desserts")
+Item.create(name: "BIKO w/ COCOJAM", half: 18, full: 28, dish: "Desserts")
+Item.create(name: "BIKO w/ LATIK", half: 18, full: 28, dish: "Desserts")
+Item.create(name: "UBE BIKO", half: 18, full: 28, dish: "Desserts")
+Item.create(name: "CASSAVA w/ MACAPUNO", half: 19, full: 30, dish: "Desserts")
+Item.create(name: "CASSAVA w/ FLAN", half: 20, full: 35, dish: "Desserts")
+Item.create(name: "NILUPAK", half: 25, full: 34, dish: "Desserts")
 
 # Comes In (round trays)
-Item.create(name: "", small: , large: , dish: "")
-Item.create(name: "", small: , large: , dish: "")
-Item.create(name: "", small: , large: , dish: "")
-Item.create(name: "", small: , large: , dish: "")
-Item.create(name: "", small: , large: , dish: "")
-Item.create(name: "", small: , large: , dish: "")
-Item.create(name: "", small: , large: , dish: "")
-Item.create(name: "", small: , large: , dish: "")
+Item.create(name: "KUTSINTA", small: 14.50, large: 25.50, dish: "Desserts")
+Item.create(name: "PALITAW (Seasonal)", small: 15, large: 28.50, dish: "Desserts")
+Item.create(name: "PICHI PICHI w/ CHEESE", small: 23, dish: "Desserts")
+Item.create(name: "PICHI PICHI w/ COCONUT", small: 23, dish: "Desserts")
+Item.create(name: "PUTO BUMBONG (Seasonal)", small: 30, large: 60, dish: "Desserts")
+Item.create(name: "RAINBOW PUTO", small: 14.50, large: 25.50, dish: "Desserts")
+Item.create(name: "PUTONG PUTI", small: 14.50, large: 25.50, dish: "Desserts")
+Item.create(name: "PUTO w/ CHEESE", small: 22.50, large: 43.50, dish: "Desserts")
+Item.create(name: "PUTO w/ SALTED EGG", small: 22.50, large: 43.50, dish: "Desserts")
+
+# per piece
+Item.create(name: "BANANA-QUE", misc: "BASED ON SIZE", dish: "Desserts per Piece")
+Item.create(name: "KAMOTE-QUE", misc: "BASED ON SIZE", dish: "Desserts per Piece")
+Item.create(name: "LECHE FLAN", each: 6.89, dish: "Desserts per Piece")
+Item.create(name: "TAHO", each: 3.50, dish: "Desserts per Piece")
+Item.create(name: "TURON (Saging)", misc: "MARKETPRICE", dish: "Desserts per Piece")
+Item.create(name: "TURONITOS (mini turon)", misc: "BASED ON AVAILABILITY", dish: "Desserts per Piece")
+Item.create(name: "SUMAN SA ANTALA(2 Pieces)", each: 1, dish: "Desserts per Piece")
+Item.create(name: "SUMAN SA CASSAVA (2 Pieces)", each: 1, dish: "Desserts per Piece")
+Item.create(name: "SUMAN SA UBE (2 Pieces)", each: 1, dish: "Desserts per Piece")
+Item.create(name: "UBE HALAYA (extra small tray)", each: 7, dish: "Desserts per Piece")
+
+# sml md lrg attributes
+Item.create(name: "BUKO PANDAN", small: 20, medium: 37, large: 70, dish: "Desserts")
+Item.create(name: "GINATAANG NA HALO HALO", small: 18, medium: 35, large: 70, dish: "Desserts")
+Item.create(name: "GINATAANG NA MAIS", small: 15, medium: 30, large: 60, dish: "Desserts")
+
+
 
 
 
