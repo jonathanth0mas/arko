@@ -1,0 +1,8 @@
+<% if @items_orders.size == 0 %>
+<p class="text-center">There are no items in your order</p>
+<% else %>
+<% @items_orders.each do |items_orders| %>
+	<%= render 'shared/cart_row', item: items_orders.item, items_orders: items_orders %>
+<% end %>
+<% end %>
+

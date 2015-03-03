@@ -1,0 +1,9 @@
+<%= item.name %>
+
+<%= form_for items_orders do |f| %>
+
+	<%= f.number_field :quantity, value: items_orders.quantity.to_i, min: 1 %>
+	<%= f.hidden_field :item_id, value: item.id %>
+	<%= f.submit "Add To Order", class: "btn btn-primary" %>
+
+<% end %>

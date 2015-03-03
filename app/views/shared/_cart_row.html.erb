@@ -1,0 +1,10 @@
+<%= item.name %>
+
+<%= form_for items_orders do |f| %>
+
+	<%= f.number_field :quantity, value: items_orders.quantity.to_i, min: 1 %>
+	<%= f.hidden_field :item_id, value: item.id %>
+	<%= f.submit "Update Order", class: "btn btn-primary" %>
+	<%= link_to "Remove Item", items_orders, method: :delete, remote: true, class: "btn btn-danger" %>
+
+<% end %>
