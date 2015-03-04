@@ -34,9 +34,8 @@ ActiveRecord::Schema.define(version: 20150227175326) do
     t.integer  "item_id"
     t.integer  "order_id"
     t.integer  "quantity"
-    t.float    "total_price"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string   "size"
   end
 
@@ -44,8 +43,6 @@ ActiveRecord::Schema.define(version: 20150227175326) do
   add_index "order_items", ["order_id"], name: "index_order_items_on_order_id", using: :btree
 
   create_table "orders", force: :cascade do |t|
-    t.float    "subtotal"
-    t.float    "total"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

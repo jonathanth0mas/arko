@@ -5,7 +5,6 @@
 
 	<%= f.number_field :quantity, value: order_item.quantity.to_i %>
 	<%= f.hidden_field :item_id, value: item.id %>
-	<%= f.select :size, options_for_select({"Small - $#{item.small}" => "Small", "Medium - $#{item.medium}" => "Medium", "Large - $#{item.large}" => "Large"}) %>
 	<%= f.submit "Update Order" %>
 	<%= link_to "Remove Item", order_item, method: :delete, remote: true, class: "btn btn-danger" %>
 

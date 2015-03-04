@@ -5,6 +5,6 @@
 	<%= f.number_field :quantity, value: 1, min: 1 %>
 	<%= f.hidden_field :item_id, value: item.id %>
 	<%= f.select :size, options_for_select({"Small - $#{item.small}" => "Small", "Medium - $#{item.medium}" => "Medium", "Large - $#{item.large}" => "Large"}) %>
- 	<%= f.submit "Add to Order" %>
+ 	<%= f.submit "Add to Order", class: "btn btn-primary" %>
 
 <% end %>

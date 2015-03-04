@@ -4,7 +4,6 @@ class CreateOrderItems < ActiveRecord::Migration
       t.references :item, index: true
       t.references :order, index: true
       t.integer :quantity
-      t.float :total_price
 
       t.timestamps null: false
     end
