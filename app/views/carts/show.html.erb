@@ -1,3 +1,9 @@
 <div class="shopping-cart">
   <%= render "shared/shopping_cart" %>
 </div>
+
+<%= form_tag("/orders/complete/", :method => "post") do %>
+
+	<%= submit_tag("Place Order" , class: "btn btn-success") %>
+
+<% end %>
