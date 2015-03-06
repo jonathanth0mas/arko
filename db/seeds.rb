@@ -209,7 +209,7 @@ Item.create(name: "FRIED UBOD", each: 1.50, dish: "Lumpia (Chinese-Ubod-Vegetabl
 
 # Rice
 Item.create(name: "GARLIC FRIED RICE", small: 13, medium: 25, large: 50, dish:"Rice")
-Item.create(name: "SHRIM FRIED RICE", small: 15, medium: 27, large: 55, dish:"Rice")
+Item.create(name: "SHRIMP FRIED RICE", small: 15, medium: 27, large: 55, dish:"Rice")
 Item.create(name: "STEAMED RICE (regular)", small: 8, medium: 16, large: 32, dish:"Rice")
 
 # Lechon (Roast Pig)
