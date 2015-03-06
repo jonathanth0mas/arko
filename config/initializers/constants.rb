@@ -1,1 +1,16 @@
-DISH = ["Vegetable", "Pork", "Noodle", "Beef", "Chicken", "Seafood(SQUID)", "Seafood(FISH)"]
+DISH = ["Vegetable", 
+		"Pork", 
+		"Noodle", 
+		"Beef", 
+		"Chicken", 
+		"Seafood(SQUID)", 
+		"Seafood(FISH)",
+		"Seafood(SHRIMP & KUHOL",
+		"Kambing",
+		"Per Piece or Pound",
+		"Lumpiang Shanghai",
+		"Lumpia (Chinese-Ubod-Vegetables)",
+		"Rice",
+		"Lechon (Roast-Pig)",
+		"Desserts",
+		"Desserts per Piece"]
