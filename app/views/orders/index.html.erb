@@ -1,5 +1,29 @@
-<%= @orders.each do |order| %>
+<h1>All Orders</h1>
 
-	<%= order.user %>
+	<% @orders.each do |order| %>
+		
+		<div>
+			<%= order.user.first %> <%= order.user.last %>
+		</div>
+		<div>
+			<%= order.user.email %>
+		</div>
+		<div>
+			<%= order.user.phone_number %>
+		</div>
+		<div>
+			<% order.order_items.each do |order| %>
 
-<% end %>
+				<div>
+					<%= order.item.name %> - <%= order.size %>
+				</div>
+				<div>
+					Qty: <%= order.quantity %>
+				</div>
+
+			<% end %>
+		</div>
+
+	<% end %>
+
+

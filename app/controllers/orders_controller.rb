@@ -1,7 +1,7 @@
 class OrdersController < ApplicationController
 
 	def index
-		@orders = Order.all
+		@orders = Order.where(confirmed: true)
 	end
 
 	def complete

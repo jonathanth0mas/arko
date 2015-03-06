@@ -5,9 +5,11 @@
 <% if @order_items.size > 0 %>
 
 	<%= form_tag("/orders/complete/", :method => "post") do %>
-
-		<%= submit_tag("Place Order" , class: "btn btn-success") %>
-
+		<div class="row">
+			<div class="col-md-offset-4 col-md-6">
+				<%= submit_tag("Place Order" , class: "btn btn-success") %>
+			</div>
+		</div>
 	<% end %>
 	
 <% end %>
