@@ -1,0 +1,14 @@
+<%= item.name %>
+<p> - <%= order_item.size %></p>
+
+<%= form_for order_item, remote: true do |f| %>
+
+	<%= f.number_field :quantity, value: order_item.quantity.to_i %>
+	<%= f.hidden_field :item_id, value: item.id %>
+	<%= f.submit "Update Order" %>
+	<%= link_to "Remove Item", order_item, method: :delete, remote: true, class: "btn btn-danger" %>
+
+<% end %>
+
+
+

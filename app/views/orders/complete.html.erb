@@ -1,0 +1,18 @@
+<h1>Your Order</h1>
+
+<% @order_items.each do |order_item| %>
+
+	<div>
+		<%= order_item.item.name %>
+	</div>
+	<div>
+		Size - <%= order_item.size %>
+	</div>
+	<div>
+		 Quantity - <%= order_item.quantity %>
+	</div>
+
+<% end %>
+<div>
+Ordered at: <%= @order.created_at %>
+</div>
