@@ -1,1 +1,1 @@
-DISH = ["Vegetable", "Pork", "Noodle", "Beef", "Chicken"]
+DISH = ["Vegetable", "Pork", "Noodle", "Beef", "Chicken", "Seafood(SQUID)", "Seafood(FISH)"]
