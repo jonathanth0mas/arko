@@ -2,8 +2,12 @@
   <%= render "shared/shopping_cart" %>
 </div>
 
-<%= form_tag("/orders/complete/", :method => "post") do %>
+<% if @order_items.size > 0 %>
 
-	<%= submit_tag("Place Order" , class: "btn btn-success") %>
+	<%= form_tag("/orders/complete/", :method => "post") do %>
 
+		<%= submit_tag("Place Order" , class: "btn btn-success") %>
+
+	<% end %>
+	
 <% end %>
