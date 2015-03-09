@@ -21,6 +21,10 @@ body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
+.arko_logo {
+    padding: 7px;
+}
+
 .navbar-fixed-top .nav {
     padding: 15px 0;
 }
@@ -43,3 +47,4 @@ footer {
         padding: 15px 0;
     }
 }
+
