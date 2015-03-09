@@ -1,10 +1,13 @@
-<%= item.name %>
+<div class="col-md-offset-2 col-md-8 item-list">
+	<%= item.name %>
+	
 
-<%= form_for order_item, remote: true do |f| %>
+	<%= form_for order_item, remote: true do |f| %>
 
-	<%= f.number_field :quantity, value: 1, min: 1 %>
-	<%= f.hidden_field :item_id, value: item.id %>
-	<%= f.select :size, options_for_select({"Small - $#{item.small}" => "Small", "Medium - $#{item.medium}" => "Medium", "Large - $#{item.large}" => "Large"}) %>
- 	<%= f.submit "Add to Order", class: "btn btn-primary" %>
+		<span>Qty: </span><%= f.number_field :quantity, value: 1, min: 1 %>
+		<%= f.hidden_field :item_id, value: item.id %>
+		<%= f.select :size, options_for_select({"Small" => "Small", "Medium" => "Medium", "Large" => "Large"}) %>
+	 	<%= f.submit "Add to Order", class: "btn btn-primary" %>
 
-<% end %>
+	<% end %>
+</div>

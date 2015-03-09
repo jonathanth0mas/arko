@@ -1,16 +1,28 @@
-<%= form_tag(items_path, method: "get") do %>
-	
-	<%= select_tag "dish", options_from_collection_for_select(DISH, "to_s", "to_s") %>
-	<%= submit_tag "Search", class: "btn btn-success" %>
+<div class="row">
+	<div class="col-md-offset-4 col-md-4">
+		<h1 class="text-center">Find your dish</h1>
+		<h3 class="text-center">See through images, select your size, add to your order</h3>
+		<div class="text-center">
+			<%= form_tag(items_path, method: "get") do %>
+				
+				<%= select_tag "dish", options_from_collection_for_select(DISH, "to_s", "to_s") %>
+				<%= submit_tag "Search", class: "btn btn-success" %>
 
-<% end %>
-
-<h1><%= params[:dish] %></h1>
-
-<% @items.each do |item| %>
-	
-	<div>
-		<%= render "shared/item_row", item: item, order_item: @order_item %>
+			<% end %>
+		</div>
 	</div>
+</div>
 
-<% end %>
+<div class="row">
+	<div class="col-md-offset-2 col-md-8 item-index">
+		<h1><%= params[:dish] %></h1>
+
+		<% @items.each do |item| %>
+			
+			<div>
+				<%= render "shared/item_row", item: item, order_item: @order_item %>
+			</div>
+
+		<% end %>
+	</div>
+</div>

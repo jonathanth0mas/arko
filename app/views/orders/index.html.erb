@@ -1,29 +1,29 @@
 <h1>All Orders</h1>
 
 	<% @orders.each do |order| %>
-		
-		<div>
+	<div class="order-index">
+		<div class="row">
+		<div class="col-md-2">
 			<%= order.user.first %> <%= order.user.last %>
 		</div>
-		<div>
+		<div class="col-md-2">
 			<%= order.user.email %>
 		</div>
-		<div>
+		<div class="col-md-2">
 			<%= order.user.phone_number %>
 		</div>
-		<div>
+		</div>
 			<% order.order_items.each do |order| %>
-
-				<div>
+			<div class="row">
+				<div class="col-md-3">
 					<%= order.item.name %> - <%= order.size %>
 				</div>
-				<div>
+				<div class="col-md-1">
 					Qty: <%= order.quantity %>
 				</div>
-
+			</div>
 			<% end %>
-		</div>
-
+	</div>
 	<% end %>
 
 

@@ -1,3 +1,19 @@
 // Place all the styles related to the items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@mixin border {
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.item-index {
+	@include border;
+	margin-top: 20px;
+}
+
+.item-list {
+	@include border;
+	margin: 10px;
+}
