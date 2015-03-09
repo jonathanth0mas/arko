@@ -1,24 +1,68 @@
 <% if logged_in? %>
-
-<header>
-	<h1><%= link_to "Arko", root_path %></h1>
-	<nav>
-		<div><%= link_to "Food", items_path %></div>
-		<div><%= link_to "Log Out", logout_path, method: :delete %></div>
-		<div class="cart-text"><%= render 'shared/cart_text' %></div>
-	</nav>
-</header>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/"><%= image_tag("ARKO.png", size: "175x80", alt: "Arko Logo", class: "arko_logo") %></a> 
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <%= link_to "Food", items_path %>
+                </li>
+                <li>
+                    <%= link_to "Log Out", logout_path, method: :delete %>
+                </li>
+                <li class="cart-text">
+                    <%= render 'shared/cart_text' %>	
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 
 <% end %>
 
+
 <% if logged_in? == false %>
 
-<header>
-	<h1><%= link_to "Arko", root_path %></h1>
-	<nav>
-		<div><%= link_to "Sign Up", signup_path %></div>
-		<div><%= link_to "Log In", login_path %></div>
-	</nav>
-</header>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/"><%= image_tag("ARKO.png", size: "175x80", alt: "Arko Logo", class: "arko_logo") %></a> 
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <%= link_to "Sign Up", signup_path %>
+                </li>
+                <li>
+                   <%= link_to "Log In", login_path %>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 
 <% end %>
