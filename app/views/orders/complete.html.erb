@@ -1,10 +1,12 @@
 <h1>Your Order</h1>
-<div>
-			<%= @order.user.first %> <%= @order.user.last %>
+		<div>
+			<h3><%= @order.user.first %> <%= @order.user.last %></h3>
 		</div>
+
 		<div>
 			<%= @order.user.email %>
 		</div>
+
 		<div>
 			<%= @order.user.phone_number %>
 		</div>
@@ -12,8 +14,22 @@
 
 <% @order_items.each do |order_item| %>
 
+<div class="cold-md-3" class="container" id="topTen">
+	<td>
+ 		<div class="cold-md-3" href="">1</div>
+ 		<div class="cold-md-3" href="">2</div>
+ 		<div class="cold-md-3" href="">3</div>
+ 		<div class="cold-md-3" href="">4</div>
+ 		<div class="cold-md-3" href="">5</div>
+ 		<div class="cold-md-3" href="">6</div>
+ 		<div class="cold-md-3" href="">7</div>
+ 		<div class="cold-md-3" href="">8</div>
+ 		<div class="cold-md-3" href="">9</div>
+ 		<div class="cold-md-3" href="">10</div>
+	</td>
+</div>
 
-<div class="container" id="cartItem">
+<div class="col-md-4" class="container" id="cartItem">
 	<div>
 		Quantity - <%= order_item.quantity %>
 	</div>
