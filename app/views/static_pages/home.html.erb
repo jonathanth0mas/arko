@@ -1,5 +1,5 @@
 
-<div class="background-c">
+<div class="background-c row">
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -11,81 +11,24 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <%= image_tag("meat.png", :size => "1300") %>
+      <%= image_tag("meat.png", :size => "1310") %>
     </div>
     <div class="item">
-        <%= image_tag("kids.png", :size => "1300") %>
+        <%= image_tag("kids.png", :size => "1310") %>
     </div>
     <div class="item">
-        <%= image_tag("market.png", :size => "1300") %>
+        <%= image_tag("market.png", :size => "1310") %>
     </div>
   </div>
 </div>
 </div>
 
-
-
-<body>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Heading Row -->
-        <div class="row">
-
-            <div class="col-md-offset-4 col-md-4">
-                <h1 class="text-center">Place order for your food!</h1>
-                <a class="btn btn-primary btn-lg" href="#">Sign Up!</a>
-            </div>
-            <!-- /.col-md-4 -->
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Call to Action Well -->
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="well text-center">
-                    This is a well that is a great spot for a business tagline or phone number for easy access!
-                </div>
-            </div>
-            <!-- /.col-lg-12 -->
-        </div>
-        <!-- /.row -->
-
-        <!-- Content Row -->
-        <div class="row">
-            <div class="col-md-4">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-            </div>
-            <!-- /.col-md-4 -->
-            <div class="col-md-4">
-                <h2>Contact Info</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-                <a class="btn btn-default" href="#">Send us an e-mail!</a>
-            </div>
-            <!-- /.col-md-4 -->
-            <div class="col-md-4">
-                <h2>Our Specialties</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-                <a class="btn btn-default" href="#">Take me to the menu!</a>
-            </div>
-            <!-- /.col-md-4 -->
-        </div>
-        <!-- /.row -->
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
-
+<div class="row">
+    <div class="col-md-offset-4 col-md-4">
+        <h1>Place order for food</h1>
+        <h3>Add to cart from a variety of selection</h3>
+        <%= link_to "Sign Up", signup_path, class: "btn btn-primary" %>
     </div>
+</div>
 
 
-</body>
