@@ -6,12 +6,12 @@ class ItemsController < ApplicationController
 	end
 
 	def edit
-		@items = Item.where(dish: params[:dish])
+		@item = Item.find(params[:id])
 	end
 
 	def update
-		@items = Item.where(dish: params[:dish])
-		if @items.update_attribute(item_params)
+		@item = Item.find(params[:id])
+		if @item.update_attributes(item_params)
 			redirect_to items_path
 		else
 			render :edit
