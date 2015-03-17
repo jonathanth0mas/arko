@@ -1,34 +1,49 @@
 
 <div class="background-c row">
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <%= image_tag("meat.png", :size => "1310") %>
-    </div>
-    <div class="item">
-        <%= image_tag("kids.png", :size => "1310") %>
-    </div>
-    <div class="item">
-        <%= image_tag("market.png", :size => "1310") %>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <%= image_tag("meat.png", :size => "1310") %>
+      </div>
+      <div class="item">
+          <%= image_tag("kids.png", :size => "1310") %>
+      </div>
+      <div class="item">
+          <%= image_tag("market.png", :size => "1310") %>
+      </div>
     </div>
   </div>
-</div>
+
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
 </div>
 
 <div class="row">
-    <div class="col-md-offset-4 col-md-4">
-        <h1>Place order for food</h1>
+    <div class="col-md-offset-1 col-md-8 c-main">
+        <h1>Place an order today!</h1>
         <h3>Add to cart from a variety of selection</h3>
-        <%= link_to "Sign Up", signup_path, class: "btn btn-primary" %>
+        <%= link_to "Order Now", items_path, class: "btn btn-primary" %>
     </div>
+</div>
+
+<div class="row">
+  <div class="col-md-">
+    
+  </div>
 </div>
 
 
