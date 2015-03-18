@@ -9,16 +9,15 @@
 }
 
 .item-index {
-	@include border;
 	margin-top: 20px;
-}
-
-.item-list {
-	@include border;
-	margin: 10px;
+	overflow-y: auto;
+	height: 410px;
+	h1 {
+		margin-left: 40px;
+	}
 }
 
 .search {
-	background-color: #EDEDED;
-	padding: 20px;
+	background: image-url("cartoon.png");
+	padding: 85px;
 }
