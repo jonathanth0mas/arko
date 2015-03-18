@@ -1,3 +1,5 @@
+<h1 class="col-lg-offset-1">Your Order</h1>
+
 <div class="shopping-cart">
   <%= render "shared/shopping_cart" %>
 </div>
@@ -6,7 +8,8 @@
 
 	<%= form_tag("/orders/complete/", :method => "post") do %>
 		<div class="row">
-			<div class="col-md-offset-4 col-md-6">
+			<div class="col-md-offset-10">
+				<p>Total:</p>
 				<%= submit_tag("Place Order" , class: "btn btn-success") %>
 			</div>
 		</div>
