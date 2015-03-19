@@ -21,7 +21,7 @@ class ItemsController < ApplicationController
 	private
 
 	def item_params
-		params.require(:item).permit(:name, :small, :medium, :large, :each, :misc, :dish, :image, :half, :whole, :full)
+		params.require(:item).permit(:name, :smallT, :mediumT, :largeT, :smallC, :mediumC, :largeC, :each, :misc, :dish, :image, :half, :whole, :full, :desc)
 	end
 
 end
