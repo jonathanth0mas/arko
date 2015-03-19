@@ -1,19 +1,23 @@
-<div class="container">
-	<div class="row">
-		<div class="col-md-offset-4 col-md-6">
-			<h3><%= item.name %></h3>
-			<p> Size - <%= order_item.size %></p>
+<div class="container cart-item">
+	<div class="col-lg-4">
+		<h6><%= item.name %></h6>
+		<img src="#" width="150" height="100">
+	</div>
+	<div class="col-lg-4">
+		<p class="cart-size"> Size - <%= order_item.size %></p>
+	</div>
 
-			<%= form_for order_item, remote: true do |f| %>
+		<%= form_for order_item, remote: true do |f| %>
 
-				<%= f.number_field :quantity, value: order_item.quantity.to_i %>
+			<div class="col-lg-4 cart-size">
+				<span>Qty: </span><%= f.number_field :quantity, value: order_item.quantity.to_i %>
 				<%= f.hidden_field :item_id, value: item.id %>
 				<%= f.submit "Update Order" %>
-				<%= link_to "Remove Item", order_item, method: :delete, remote: true, class: "btn btn-danger" %>
+				<%= link_to "", order_item, method: :delete, remote: true, class: "glyphicon glyphicon-trash g-remove" %>
+			</div>
 
-			<% end %>
-		</div>
-	<div>
+		<% end %>
+
 </div>
 
 

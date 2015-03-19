@@ -1,3 +1,29 @@
 // Place all the styles related to the Carts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// .cart-show {
+// 	background: image-url("wood.jpg");
+// 	padding: 50px;
+// }
+
+.g-remove {
+	color: red;
+}
+
+@media(min-width:768px){
+
+	.shopping-cart {
+		margin-top: 30px;
+	}
+
+	.cart-size {
+		margin-top: 70px;
+	}
+
+	.cart-item {
+		margin: 10px 0;
+		padding-bottom: 40px;
+		border-bottom: 1px dotted black;
+	}
+
+}

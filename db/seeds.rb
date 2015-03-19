@@ -254,12 +254,3 @@ Item.create(name: "UBE HALAYA (extra smallT tray)", each: 7, dish: "Desserts per
 Item.create(name: "BUKO PANDAN", smallT: 20, mediumT: 37, largeT: 70, dish: "Desserts")
 Item.create(name: "GINATAANG NA HALO HALO", smallT: 18, mediumT: 35, largeT: 70, dish: "Desserts")
 Item.create(name: "GINATAANG NA MAIS", smallT: 15, mediumT: 30, largeT: 60, dish: "Desserts")
-
-
-
-
-
-
-
-
-

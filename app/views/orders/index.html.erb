@@ -1,29 +1,37 @@
-<h1>All Orders</h1>
+<h1 class="text-center">All Orders</h1>
 
 	<% @orders.each do |order| %>
-		
-		<div>
-			<%= order.user.first %> <%= order.user.last %>
-		</div>
-		<div>
-			<%= order.user.email %>
-		</div>
-		<div>
-			<%= order.user.phone_number %>
-		</div>
-		<div>
-			<% order.order_items.each do |order| %>
+		<div class="order-index">
 
-				<div>
-					<%= order.item.name %> - <%= order.size %>
+				<div class="col-lg-4 text-center user-info">
+					<span class="glyphicon glyphicon-user"></span> <%= order.user.first %> <%= order.user.last %>
 				</div>
-				<div>
-					Qty: <%= order.quantity %>
+				<div class="col-lg-4 text-center user-info">
+					<span class="glyphicon glyphicon-envelope"></span> <%= order.user.email %>
+				</div>
+				<div class="col-lg-4 text-center user-info">
+					<span class="glyphicon glyphicon-earphone"></span> <%= order.user.phone_number %>
 				</div>
 
-			<% end %>
+				<% order.order_items.each do |order| %>
+					<div class="row">
+						<div class="col-lg-4 text-center">
+							<%= order.item.name %>
+						</div>
+						<div class="col-lg-4 text-center">
+							<%= order.size %>
+						</div>
+						<div class="col-lg-4 text-center">
+							Qty: <%= order.quantity %>
+						</div>
+					</div>
+				<% end %>
 		</div>
-
 	<% end %>
+
+
+
+
+
 
 

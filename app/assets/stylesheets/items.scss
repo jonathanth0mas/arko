@@ -1,3 +1,27 @@
 // Place all the styles related to the items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@mixin border {
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.item-index {
+	margin-top: 20px;
+	// overflow-y: auto;
+	// height: 410px;
+	h1 {
+		margin-left: 40px;
+	}
+}
+
+.search {
+	background: image-url("cartoon.png");
+	padding: 85px;
+}
+
+.item-list {
+	margin: 10px 0;
+}
