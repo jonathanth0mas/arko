@@ -12,7 +12,7 @@ Item.destroy_all
 Item.create(name: "ADOBONG KANGKONG", misc: "MARKET PRICE", dish: "Vegetable", desc: "ongchoy - adobo")
 Item.create(name: "ADOBONG SITAW", smallT: 27, mediumT: 50, largeT: 95, smallC: 3.5, mediumC: 7, largeC: 14, dish: "Vegetable", desc: "long beans - adobo")
 Item.create(name: "AMPALAYA CON KARNE", smallT: 27, mediumT: 50, largeT: 95, smallC: 3.5, mediumC: 7, largeC: 14, dish: "Vegetable", desc: "Bitter melon w/ beef")
-Item.create(name: "AMPALAYA WITH EGG & SHRIMP", smallT: 27, mediumT: 50, largeT: 95, dish: "Vegetable". desc: "Bitter melon w/ shrimp & scrambled egg")
+Item.create(name: "AMPALAYA WITH EGG & SHRIMP", smallT: 27, mediumT: 50, largeT: 95, dish: "Vegetable", desc: "Bitter melon w/ shrimp & scrambled egg")
 Item.create(name: "ASPARAGUS WITH SHRIMP", smallT: 30, mediumT: 55, largeT: 105, smallC: 3.5, mediumC: 7, largeC: 14, dish: "Vegetable", desc: "Sesame shrimp & asparagus stir-fry")
 Item.create(name: "BROCCOLI WITH BEEF", smallT: 30, mediumT: 55, largeT: 105, smallC: 3.5, mediumC: 7, largeC: 14, dish: "Vegetable", desc: "Stir-fried beef & broccoli")
 Item.create(name: "CHINESE BROCCOLI WITH BEEF", smallT: 30, mediumT: 55, largeT: 105, smallC: 3.5, mediumC: 7, largeC: 14, dish: "Vegetable", desc: "Stir-fried beef & chinese broccoli")
