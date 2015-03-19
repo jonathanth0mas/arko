@@ -13,7 +13,7 @@
 				<span>Qty: </span><%= f.number_field :quantity, value: order_item.quantity.to_i %>
 				<%= f.hidden_field :item_id, value: item.id %>
 				<%= f.submit "Update Order" %>
-				<%= link_to "", order_item, method: :delete, remote: true, class: "glyphicon glyphicon-remove g-remove" %>
+				<%= link_to "", order_item, method: :delete, remote: true, class: "glyphicon glyphicon-trash g-remove" %>
 			</div>
 
 		<% end %>
