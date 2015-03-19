@@ -14,7 +14,7 @@
 		</div>
 		<%= f.hidden_field :item_id, value: item.id %>
 		<div>
-		<%= f.select :size, options_for_select({"Small (T) - #{item.small}" => "Small", "Medium" => "Medium", "Large" => "Large", "Small (C)" => "Small"}) %>
+		<%= f.select :size, options_for_select({"Small (T) - $#{item.smallT}" => "#{item.smallT}", "Medium (T) - $#{item.mediumT}" => "#{item.mediumT}", "Large (T) - $#{item.largeT}" => "#{item.largeT}", "Small (C) - $#{item.smallC}" => "#{item.smallC}", "Medium (C) - $#{item.mediumC}" => "#{item.mediumC}", "Large (C) - $#{item.largeC}" => "#{item.largeC}", "Each - #{item.each}" => "#{item.each}", "Half - #{item.half}" => "#{item.half}", "Whole - #{item.whole}" => "#{item.whole}", "Full - #{item.full}" => "#{item.full}"}) %>
 		</div>
 		<div>
 	 	<%= f.submit "Add to Order", class: "btn btn-primary o-btn" %>
