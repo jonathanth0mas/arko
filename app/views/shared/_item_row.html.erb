@@ -1,18 +1,18 @@
 <div class="col-lg-4 item-list text-center">
 
 	<div>
-	<%= item.name %> <%= link_to "Edit", edit_item_path(item.id) %>
+		<%= item.name %> <%= link_to "Edit", edit_item_path(item.id) %>
 	</div>
 	<div>
-	<img src="#" width="300" height="270">
+		<img src="#" width="300" height="270">
 	</div>
 
 	<%= form_for order_item, remote: true do |f| %>
 
 		<div>
-		<span>Qty: </span><%= f.number_field :quantity, value: 1, min: 1 %>
+			<span>Qty: </span><%= f.number_field :quantity, value: 1, min: 1 %>
 		</div>
-		<%= f.hidden_field :item_id, value: item.id %>
+			<%= f.hidden_field :item_id, value: item.id %>
 		<div>
 		<%= f.select :size, options_for_select({"Small (T) - #{item.small}" => "Small", "Medium" => "Medium", "Large" => "Large", "Small (C)" => "Small"}) %>
 		</div>
