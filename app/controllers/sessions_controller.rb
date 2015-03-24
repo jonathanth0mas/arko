@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
       #  redirect_to user_path(user)
       # end
     else
-      redirect_to root_path
+      redirect_to login_path
     end
   end
 
