@@ -18,7 +18,7 @@ class ItemsController < ApplicationController
 		end
 	end
 
-	def active
+	def list 
 		@items = Item.all
 	end
 

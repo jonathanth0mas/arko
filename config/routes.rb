@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   delete '/logout' => 'sessions#destroy', as: :logout
 
   resources :items, only: [:index, :edit, :update]
+  get '/list' => 'items#list'
+  
   resource :cart, only: [:show]
   resources :order_items, only: [:create, :update, :destroy]
   resources :orders, only: [:index]
