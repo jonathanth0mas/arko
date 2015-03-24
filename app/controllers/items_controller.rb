@@ -18,10 +18,14 @@ class ItemsController < ApplicationController
 		end
 	end
 
+	def active
+		@items = Item.all
+	end
+
 	private
 
 	def item_params
-		params.require(:item).permit(:name, :smallT, :mediumT, :largeT, :smallC, :mediumC, :largeC, :each, :misc, :dish, :image, :half, :whole, :full, :desc)
+		params.require(:item).permit(:name, :smallT, :mediumT, :largeT, :smallC, :mediumC, :largeC, :each, :misc, :dish, :image, :half, :whole, :full, :desc, :active)
 	end
 
 end

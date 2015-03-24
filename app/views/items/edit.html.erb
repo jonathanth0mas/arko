@@ -1,7 +1,17 @@
 <%= form_for @item do |f| %>
 
+<div>
+<%= f.label :name, "Name:" %>
 <%= f.text_field :name %>
+</div>
 
-<%= f.submit "Update" %>
+<div>
+<%= f.label :active, "Available" %>
+<%= f.check_box :active, {}, "true", "false" %>
+</div>
+
+<div>
+<%= f.submit "Update", class: "btn btn-primary" %>
+</div>
 
 <% end %>
