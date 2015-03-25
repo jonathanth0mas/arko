@@ -11,16 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150311193438) do
+ActiveRecord::Schema.define(version: 20150317233800) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "items", force: :cascade do |t|
     t.string   "name"
-    t.float    "small"
-    t.float    "medium"
-    t.float    "large"
+    t.float    "smallC"
+    t.float    "mediumC"
+    t.float    "largeC"
+    t.float    "smallT"
+    t.float    "mediumT"
+    t.float    "largeT"
     t.float    "each"
     t.string   "misc"
     t.string   "dish"
@@ -31,6 +34,7 @@ ActiveRecord::Schema.define(version: 20150311193438) do
     t.float    "half"
     t.float    "whole"
     t.float    "full"
+    t.string   "desc"
   end
 
   create_table "order_items", force: :cascade do |t|
