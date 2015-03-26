@@ -10,7 +10,7 @@
 				<span>Pick-up Date: </span>
 				<%= text_field(:order, :date, class: "datepicker") %>
 				<span>Time: </span>
-				<%= text_field(:order, :time) %>
+				<%= text_field(:order, :time, class: "timepicker") %>
 				<%= submit_tag("Place Order" , class: "btn btn-success") %>
 			</div>
 		</div>
@@ -21,5 +21,6 @@
 <script type="text/javascript">
   $(document).ready(function(){
     $('.datepicker').datepicker();
+    $('.timepicker').timepicker();
   });
 </script>

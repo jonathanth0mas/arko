@@ -14,6 +14,6 @@ class OrdersController < ApplicationController
   private
 
   def order_parameters
-    params.require(:order).permit(:date)
+    params.require(:order).permit(:date, :time)
   end
 end
