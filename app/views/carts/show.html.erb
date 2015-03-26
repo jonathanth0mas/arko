@@ -6,8 +6,11 @@
 
 	<%= form_tag("/orders/complete/", :method => "post") do %>
 		<div class="row">
-			<div class="col-md-offset-4 col-md-6">
+			<div class="col-lg-offset-4 col-lg-6">
+				<span>Pick-up Date: </span>
 				<%= text_field(:order, :date, class: "datepicker") %>
+				<span>Time: </span>
+				<%= text_field(:order, :time) %>
 				<%= submit_tag("Place Order" , class: "btn btn-success") %>
 			</div>
 		</div>

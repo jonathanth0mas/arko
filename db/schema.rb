@@ -54,8 +54,8 @@ ActiveRecord::Schema.define(version: 20150325212505) do
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
     t.boolean  "confirmed",  default: false
-    t.datetime "date"
-    t.datetime "time"
+    t.string   "date"
+    t.string   "time"
   end
 
   add_index "orders", ["user_id"], name: "index_orders_on_user_id", using: :btree
