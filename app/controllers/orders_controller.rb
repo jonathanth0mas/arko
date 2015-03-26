@@ -8,5 +8,12 @@ class OrdersController < ApplicationController
 		@order_items = OrderItem.where(order_id: current_order.id)
 		@order = Order.find(current_order.id)
 		@order.update_attribute(:confirmed, true)
-	end
+	  @order.update_attributes(order_parameters)
+  end
+
+  private
+
+  def order_parameters
+    params.require(:order).permit(:date)
+  end
 end
