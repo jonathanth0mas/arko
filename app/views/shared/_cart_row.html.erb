@@ -9,13 +9,16 @@
 
 		<%= form_for order_item, remote: true do |f| %>
 
-				<span>Qty: </span><%= f.number_field :quantity, value: order_item.quantity.to_i %>
-				<%= f.hidden_field :item_id, value: item.id %>
-				<%= f.submit "Update Order", class: "btn btn-success" %>
-				<%= link_to "", order_item, method: :delete, remote: true, class: "glyphicon glyphicon-trash g-remove" %>
-	</div>
+			<span>Qty: </span><%= f.number_field :quantity, value: order_item.quantity.to_i %>
+			<%= f.hidden_field :item_id, value: item.id %>
+			<%= f.submit "Update Order", class: "btn btn-success" %>
+			<%= link_to "", order_item, method: :delete, remote: true, class: "glyphicon glyphicon-trash g-remove" %>
 
 		<% end %>
+		
+	</div>
+
+		
 
 </div>
 
