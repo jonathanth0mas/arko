@@ -1,5 +1,9 @@
 <h1 class="text-center">Your Order</h1>
 
+<% if @order_items.size == 0 %>
+	<p class="text-center">There are no items in your order</p>
+<% end %>
+
 <div class="shopping-cart col-lg-7">
   	<%= render "shared/shopping_cart" %>
 </div>

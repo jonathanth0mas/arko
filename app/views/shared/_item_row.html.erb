@@ -9,8 +9,9 @@
 
 	<%= form_for order_item, remote: true do |f| %>
 
+		
 		<div>
-		<span>Qty: </span><%= f.number_field :quantity, value: 1, min: 1 %>
+		<span>Qty: </span><%= f.number_field :quantity, value: 1, min: 1, class: "qty" %>
 		</div>
 		<%= f.hidden_field :item_id, value: item.id %>
 		<div>
