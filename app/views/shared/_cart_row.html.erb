@@ -4,7 +4,7 @@
 		<img src="#" width="150" height="100">
 	</div>
 	<div class="col-lg-4">
-		<p class="cart-size"> Size - <%= order_item.size %></p>
+		<p class="cart-size"> Size - <%= order_item.unit_price %></p>
 	</div>
 
 		<%= form_for order_item, remote: true do |f| %>
@@ -17,6 +17,8 @@
 			</div>
 
 		<% end %>
+
+		
 
 </div>
 

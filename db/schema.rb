@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 20150330211902) do
     t.integer  "quantity"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.string   "unit_price"
+    t.float    "unit_price"
     t.float    "total_price"
   end
 
