@@ -17,9 +17,16 @@
 }
 
 .cart-info {
-	margin: 30px 0;
-	padding: 40px;
+	margin: 20px 0;
+	padding: 20px;
 	background: #f4f5f0;
+	div {
+		margin: 5px 0;
+	}
+}
+
+.cart-selection div {
+	margin-top: 5px;
 }
 
 .summary {
@@ -35,7 +42,7 @@
 	}
 
 	.cart-size {
-		margin-top: 70px;
+		margin-top: 20px;
 	}
 
 	.cart-item {

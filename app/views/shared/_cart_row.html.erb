@@ -3,15 +3,19 @@
 		<h6><%= item.name %></h6>
 		<img src="#" width="150" height="100">
 	</div>
-	<div class="col-lg-4">
+	<div class="col-lg-4 cart-selection">
 		<p class="cart-size"> Size - <%= order_item.unit_price %></p>
 
 		<%= form_for order_item, remote: true do |f| %>
 
-			<span>Qty: </span><%= f.number_field :quantity, value: order_item.quantity.to_i %>
+			<span>Qty: </span><%= f.number_field :quantity, value: order_item.quantity.to_i, class: "qty" %>
 			<%= f.hidden_field :item_id, value: item.id %>
+			<div>
 			<%= f.submit "Update Order", class: "btn btn-success" %>
+			</div>
+			<div>
 			<%= link_to "", order_item, method: :delete, remote: true, class: "glyphicon glyphicon-trash g-remove" %>
+			</div>
 
 		<% end %>
 		
