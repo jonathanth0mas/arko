@@ -1,6 +1,6 @@
 <div class="row search">
 	<div class="col-lg-offset-2 col-lg-8">
-		<h1 class="text-center">Find your dish</h1>
+		<h1 class="text-center"><strong>Find your dish</strong></h1>
 		<div class="text-center">
 			<%= form_tag(items_path, method: "get") do %>
 				
@@ -14,7 +14,7 @@
 
 <div class="row">
 	<div class="item-index">
-		<h1><%= params[:dish] %></h1>
+		<h1 class="text-center"><%= params[:dish] %></h1>
 
 		<% @items.each do |item| %>
 				
