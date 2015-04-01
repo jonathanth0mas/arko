@@ -6,16 +6,6 @@ class OrderItem < ActiveRecord::Base
 
   before_save :finalize
 
-  # def unit_price
-  # 	if persisted?
-  # 		self[:unit_price]
-  # 	end
-  # end
-
-  # def total_price
-  # 	unit_price * quantity
-  # end
-
   private
 
   def finalize
