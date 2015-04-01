@@ -4,7 +4,7 @@ class OrderItem < ActiveRecord::Base
 
   validates :quantity, presence: true, numericality: { only_integer: true, greater_than: 0 }
 
-  # before_save :finalize
+  before_save :finalize
 
   # def unit_price
   # 	if persisted?
@@ -16,10 +16,10 @@ class OrderItem < ActiveRecord::Base
   # 	unit_price * quantity
   # end
 
-  # private
+  private
 
-  # def finalize
-  # 	self[:unit_price] = unit_price
-  # 	self[:total_price] = quantity * self[:unit_price]
-  # end
+  def finalize
+  	self[:unit_price] = unit_price
+  	self[:total_price] = quantity * self[:unit_price]
+  end
 end
