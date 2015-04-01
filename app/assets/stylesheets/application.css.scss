@@ -19,9 +19,10 @@
 @import 'bootstrap';
 @import url('//fonts.googleapis.com/css?family=Josefin+Sans|Gloria+Hallelujah|Pacifico|Amatic+SC|Courgette|Shadows+Into+Light+Two|Handlee');
 
-// body {
-//     padding-top: 60px; Required padding for .navbar-fixed-top. Change if height of navigation changes.
-// }
+html,
+body {
+    font-family: 'Shadows Into Light Two', cursive;
+}
 
 body {
     padding-top: 80px;

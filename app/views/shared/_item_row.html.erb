@@ -4,8 +4,12 @@
 	<%= item.name %>
 	</div>
 	
+	<div class="image-holder">
 	<img src="#" width="300" height="270" >
-	<p><%= item.desc %></p>
+	<div class="tooltip">
+	<p class="tooltiptxt"><%= item.desc %></p>
+	</div>
+	</div>
 
 	<%= form_for order_item, remote: true do |f| %>
 
