@@ -3,14 +3,17 @@
 	<div>
 	<%= item.name %>
 	</div>
-	<div>
-	<img src="#" width="300" height="270">
+	
+	<div class="carddiv">
+	<img src="#" class="frontofcard" width="300" height="270" >
+	<p class="backofcard"><%= item.desc %></p>
 	</div>
 
 	<%= form_for order_item, remote: true do |f| %>
 
+		
 		<div>
-		<span>Qty: </span><%= f.number_field :quantity, value: 1, min: 1 %>
+		<span>Qty: </span><%= f.number_field :quantity, value: 1, min: 1, class: "qty" %>
 		</div>
 		<%= f.hidden_field :item_id, value: item.id %>
 		<div>
