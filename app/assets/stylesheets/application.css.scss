@@ -34,42 +34,13 @@ body {
     padding: 15px 0;
 }
 
-.navbar-fixed-top .navbar-brand {
-    padding: 0 15px;
+// .navbar-fixed-top .navbar-brand {
+//     padding: 0 15px;
 
-}
+// }
 
 footer {
     padding: 30px 0;
-}
-
-.carddiv {
-    width:100px; 
-    height:170px; 
-    position:relative;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transform-origin: 100%;
-    -webkit-transition: all 0.7s ease;
-    transform-style: preserve-3d;
-    transform-origin: 100%;
-    transition: all 0.7s ease;
-}
-
-.carddiv:hover {
-    -webkit-transform: rotateX(-180deg);
-    transform: rotateX(-180deg);
-}
-.frontofcard, .backofcard {
-    width:300px; 
-    height:270px; 
-    position:absolute; 
-    -webkit-backface-visibility:hidden;
-    backface-visibility:hidden;
-}
-.backofcard {
-    padding-top: 100px;
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
 }
 
 
@@ -81,5 +52,6 @@ footer {
     .navbar-fixed-top .navbar-brand {
         padding: 15px 0;
     }
+
 }
 

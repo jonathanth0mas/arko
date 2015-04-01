@@ -14,3 +14,17 @@
 		font-size: 6em;
 	}
 }
+
+.about-section {
+	margin-top: 50px;
+}
+
+@media(min-width:768px) {
+
+    .about-section {
+        margin-top: 200px;
+        padding: 40px;
+    }
+
+}
+
