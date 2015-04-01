@@ -11,7 +11,7 @@
 			<span>Qty: </span><%= f.number_field :quantity, value: order_item.quantity.to_i, class: "qty" %>
 			<%= f.hidden_field :item_id, value: item.id %>
 			<div>
-			<%= f.submit "Update Order", class: "btn btn-success" %>
+			<%= f.submit "Update Order", class: "btn btn-success update-btn" %>
 			</div>
 			<div>
 			<%= link_to "", order_item, method: :delete, remote: true, class: "glyphicon glyphicon-trash g-remove" %>
@@ -20,12 +20,17 @@
 		<% end %>
 		
 	</div>
-
-		
-
-		
-
 </div>
 
+<script>
+
+	$(document).ready(function(){
+		$(".update-btn").click(function(){
+			$(".update-p").html("*Order has been updated!");
+		})
+
+	});
+
+</script>
 
 

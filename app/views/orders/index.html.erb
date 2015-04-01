@@ -1,6 +1,10 @@
 <h1 class="text-center">All Orders</h1>
 
 	<% @orders.each do |order| %>
+
+		<div class="pickup">
+			<p>Pick Up Date & Time: <%= order.date %> - <%= order.time %></p>
+		</div>
 		<div class="order-index">
 
 				<div class="col-lg-4 text-center user-info">
@@ -27,9 +31,6 @@
 					</div>
 				<% end %>
 
-				<div class="pickup">
-					<p>Pick Up Date & Time: <%= order.date %> - <%= order.time %></p>
-				</div>
 		</div>
 	<% end %>
 
