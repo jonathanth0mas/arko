@@ -2,9 +2,12 @@
 	<h1 class="text-center">Update Item!</h1>
 	<div class="col-lg-offset-2 col-lg-5">
 		<img src="#" width="400" height="400">
+		<div>
+		<%= link_to "Back to list", list_path %>
+		</div>
 	</div>
 
-	<div class="col-lg-4">
+	<div class="col-lg-5">
 		<%= form_for @item do |f| %>
 
 		<div>
