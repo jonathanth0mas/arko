@@ -1,3 +1,12 @@
+<h1 class="text-center">Edit Items!</h1>
+
+<%= form_tag(list_path, method: "get") do %>
+	
+	<%= select_tag "dish", options_from_collection_for_select(DISH, "to_s", "to_s") %>
+	<%= submit_tag "Search", class: "btn btn-success" %>
+
+<% end %>
+
 <% @items.each do |item| %>
 
 <div>
