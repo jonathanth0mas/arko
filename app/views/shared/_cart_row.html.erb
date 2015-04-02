@@ -1,7 +1,14 @@
 <div class="cart-item col-lg-offset-2 col-lg-8">
 	<div class="col-lg-6">
 		<h6><%= item.name %></h6>
-		<img src="#" width="150" height="100">
+
+		<div class="image-holder">
+			<img src="#" width="150" height="100" >
+				<div class="tooltip">
+					<p class="tooltiptxt"><%= item.desc %></p>
+				</div>
+		</div>
+
 	</div>
 	<div class="col-lg-4 cart-selection">
 		<p class="cart-size"> Size - <%= order_item.unit_price %></p>
