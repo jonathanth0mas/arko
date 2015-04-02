@@ -17,11 +17,13 @@
 }
 
 .cart-info {
-	margin: 20px 0;
-	padding: 20px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding: 10px;
 	background: #f4f5f0;
 	div {
 		margin: 5px 0;
+		display: inline-block;
 	}
 }
 
@@ -32,7 +34,7 @@
 .summary {
 	border: 1px dotted black;
 	border-radius: 10px;
-	margin-top: 30px;
+	margin-top: 70px;
 }
 
 .update-p {
