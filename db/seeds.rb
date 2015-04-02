@@ -54,7 +54,7 @@ Item.create(name: "PORK MEAT BALLS", mediumT: 55, largeT: 105, mediumC: 6, large
 Item.create(name: "PORK MENUDO", smallT: 27, mediumT: 50, largeT: 95, smallC: 3.5, mediumC: 6, largeC: 11, dish: "Pork", desc:"Diced pork, liver, hotdog, potato, carrots")
 Item.create(name: "PORK NILAGA", smallT: 27, mediumT: 50, largeT: 95, smallC: 3.5, mediumC: 6, largeC: 11, dish: "Pork", desc:"Pork soup w/ vegetables")
 Item.create(name: "PORK POCHERO", smallT: 30, mediumT: 55, largeT: 105, smallC: 3.5, mediumC: 6, largeC: 11, dish: "Pork", desc:"Pork stew w/ garbanzos, carrots, sweet potato, and plantain")
-Item.create(name: "PORK SINIGANG", smallT: 27, mediumT: 50, largeT: 95, smallC: 3.5, mediumC: 6, largeC: 11, dish: "Pork", desc:"Pork soup w/ tamarind flavor and tropical vegetables")
+Item.create(name: "PORK SINIGANG", smallT: 27, mediumT: 50, largeT: 95, smallC: 3.5, mediumC: 6, largeC: 11, dish: "Pork", desc:"Pork soup w/ tamarin flavor and tropical vegetables")
 Item.create(name: "BOPIS", smallT: 30, mediumT: 55, largeT: 105, smallC: 3.5, mediumC: 7, largeC: 14, dish: "Pork", desc:"Mixed pork meat, snout, tomato")
 Item.create(name: "CRISPY PATA", misc: "BASED ON SIZE", dish: "Pork", desc:"Fried pork hock")
 Item.create(name: "DINUGUAN", smallT: 27, mediumT: 50, largeT: 95, smallC: 3.5, mediumC: 6, largeC: 11, dish: "Pork", desc:"Diced pork stewed in pork blood")
@@ -161,10 +161,10 @@ Item.create(name: "SWEET & SOUR FISH FILLET", smallT: 32, mediumT: 60,largeT: 11
 Item.create(name: "CAMARON REBUSADO", smallT: 38, mediumT:75, largeT: 150, dish:"Seafood(SHRIMP & KUHOL)", desc: "Deep fried battered shrimp")
 Item.create(name: "FRIED SHRIMP", smallT: 35, mediumT: 65, largeT: 130, smallC: 4, mediumC: 7.5, largeC: 15, dish:"Seafood(SHRIMP & KUHOL)", desc: "Crispy fried shrimp w/ jalepeno")
 Item.create(name: "FRIED TILAPIA", misc: "BASED ON SIZE 3-5", dish:"Seafood(SHRIMP & KUHOL)", desc: "Fried cispy tilapia")
-Item.create(name: "HALABOS NA HIPON", smallT: 35, mediumT: 65, largeT: 130, , smallC: 4, mediumC: 7.5, largeC: 15, dish:"Seafood(SHRIMP & KUHOL)", desc: "Shrimp cooked in butter & garlic")
-Item.create(name: "GINATAANG NA KUHOL", smallT: 38, mediumT: 75, largeT: 150, , smallC: 4, mediumC: 8, largeC: 16, dish:"Seafood(SHRIMP & KUHOL)", desc: "Snail cooked in coconut milk")
-Item.create(name: "KILAWING AN HIPON", smallT: 35, mediumT: 65, largeT: 130, , smallC: 4, mediumC: 8, largeC: 16, dish:"Seafood(SHRIMP & KUHOL)", desc: "Shrimp in vinegar solution & spices")
-Item.create(name: "SINIGANG NA HIPON", smallT: 30, mediumT: 55, largeT: 105, , smallC: 4, mediumC: 7.5, largeC: 15, dish:"Seafood(SHRIMP & KUHOL)", desc: "Shrimp soup w/ tamarind & vegetables")
+Item.create(name: "HALABOS NA HIPON", smallT: 35, mediumT: 65, largeT: 130, smallC: 4, mediumC: 7.5, largeC: 15, dish:"Seafood(SHRIMP & KUHOL)", desc: "Shrimp cooked in butter & garlic")
+Item.create(name: "GINATAANG NA KUHOL", smallT: 38, mediumT: 75, largeT: 150, smallC: 4, mediumC: 8, largeC: 16, dish:"Seafood(SHRIMP & KUHOL)", desc: "Snail cooked in coconut milk")
+Item.create(name: "KILAWING AN HIPON", smallT: 35, mediumT: 65, largeT: 130, smallC: 4, mediumC: 8, largeC: 16, dish:"Seafood(SHRIMP & KUHOL)", desc: "Shrimp in vinegar solution & spices")
+Item.create(name: "SINIGANG NA HIPON", smallT: 30, mediumT: 55, largeT: 105, smallC: 4, mediumC: 7.5, largeC: 15, dish:"Seafood(SHRIMP & KUHOL)", desc: "Shrimp soup w/ tamarind & vegetables")
 Item.create(name: "SWEET & SOUR SHRIMP", smallT: 35, mediumT: 65, largeT: 130, dish:"Seafood(SHRIMP & KUHOL)", desc: "Coated shrimp and tofu with cornstarch")
 
 # Kambing
@@ -210,7 +210,7 @@ Item.create(name: "FRIED UBOD", each: 1.50, dish: "Lumpia (Chinese-Ubod-Vegetabl
 
 # Rice
 Item.create(name: "GARLIC FRIED RICE", smallT: 13, mediumT: 25, largeT: 50, dish:"Rice", desc: "Garlicky Filipino-style fried rice")
-Item.create(name: "SHRIMP FRIED RICE", smallT: 15, mediumT: 27, largeT: 55, dish:"Rice", desc: "Fried R\rice with shrimp, green onions, egg, soy sauce and bean sprouts")
+Item.create(name: "SHRIMP FRIED RICE", smallT: 15, mediumT: 27, largeT: 55, dish:"Rice", desc: "Fried Rice with shrimp, green onions, egg, soy sauce and bean sprouts")
 Item.create(name: "STEAMED RICE (regular)", smallT: 8, mediumT: 16, largeT: 32, smallC: 1, mediumC: 2, largeC: 4, dish:"Rice", desc: "Steamed fluffy grains of rice")
 
 # Lechon (Roast Pig)
@@ -233,7 +233,7 @@ Item.create(name: "PALITAW (Seasonal)", smallT: 15, largeT: 28.50, dish: "Desser
 Item.create(name: "PICHI PICHI w/ CHEESE", smallT: 23, dish: "Desserts", desc: "Coconut and grated cassava")
 Item.create(name: "PICHI PICHI w/ COCONUT", smallT: 23, dish: "Desserts", desc: "Coconut and grated cassava w/ cheese")
 Item.create(name: "PUTO BUMBONG (Seasonal)", smallT: 30, largeT: 60, dish: "Desserts", desc: "Glutinous rice (pirurutong) which has a distictly purple color")
-Item.create(name: "RAINBOW PUTO", smallT: 14.50, largeT: 25.50, dish: "Desserts", desc: "Rainbow clolored round rice cake")
+Item.create(name: "RAINBOW PUTO", smallT: 14.50, largeT: 25.50, dish: "Desserts", desc: "Rainbow colored round rice cake")
 Item.create(name: "PUTONG PUTI", smallT: 14.50, largeT: 25.50, dish: "Desserts", desc: "Steamed rice cake")
 Item.create(name: "PUTO w/ CHEESE", smallT: 22.50, largeT: 43.50, dish: "Desserts", desc: "Rice cake w/ cheese")
 Item.create(name: "PUTO w/ SALTED EGG", smallT: 22.50, largeT: 43.50, dish: "Desserts", desc: "Rice cake w/ salted egg")
