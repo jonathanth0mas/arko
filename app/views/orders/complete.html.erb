@@ -1,11 +1,11 @@
-<h1>Your Order</h1>
-<div>
+<h1 class="text-center">Order Number: <%= @order.id %></h1>
+		<div class="text-center">
 			<%= @order.user.first %> <%= @order.user.last %>
 		</div>
-		<div>
+		<div class="text-center">
 			<%= @order.user.email %>
 		</div>
-		<div>
+		<div class="text-center">
 			<%= @order.user.phone_number %>
 		</div>
 
@@ -13,25 +13,31 @@
 <% @order_items.each do |order_item| %>
 
 
-<div class="container" id="cartItem">
-	<div>
-		Quantity - <%= order_item.quantity %>
+<div class="container">
+	<div class="row complete-items">
+		<div class="col-lg-offset-4 col-lg-2">
+			<img src="#" width="130" height="130">
+		</div>
+		<div class="col-lg-4">
+			<div>
+				<%= order_item.item.name %>
+			</div>
+			<div>
+				Quantity - <%= order_item.quantity %>
+			</div>
+			<div>
+				Size - <%= order_item.size %>
+			</div>
+		</div>
 	</div>
-	<div>
-		<%= order_item.item.name %>
-	</div>
-	<div>
-		Size - <%= order_item.size %>
-	</div>
+	
 </div>
 <br/>
 
 <% end %>
 
-<br/>
-<br/>
-
-<div>
-	Total Items: <%= @order.order_items.count %> 
-	Ordered at: <%= @order.created_at %>
+<div class="text-center">
+	Your Total: <strong><%= number_to_currency current_order.subtotal %></strong>
+	Pick Up Date: <strong><%= @order.date %></strong>
+	Time: <strong><%= @order.time %></strong>
 </div>
