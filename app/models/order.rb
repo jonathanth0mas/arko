@@ -4,6 +4,9 @@ class Order < ActiveRecord::Base
 	has_many :order_items, dependent: :destroy
 	before_save :update_subtotal
 
+	validates :date, presence: true
+	validates :time, presence: true
+
 	def subtotal
 	    order_items.collect { |oi| oi.valid? ? (oi.quantity * oi.unit_price) : 0 }.sum
 	end
