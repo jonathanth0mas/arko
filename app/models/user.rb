@@ -10,4 +10,5 @@ class User < ActiveRecord::Base
 	validates :address, presence: true
 	validates :phone_number, presence: true
 	validates :password, length: { minimum: 6 }
+
 end
