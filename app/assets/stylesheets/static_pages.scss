@@ -7,6 +7,19 @@
 	position: absolute;
 }
 
+.main-banner {
+	background: image-url("banner.gif") no-repeat center;
+	background-size: cover;
+	height: 600px;
+	.o-btn {
+		margin-top: 20px;
+	}
+}
+
+.main-carousel {
+	margin-left: 20px;
+}
+
 .c-main {
 	margin-top: 100px;
 	color: white;
@@ -16,15 +29,12 @@
 }
 
 .about-section {
-	margin-top: 50px;
+	padding: 50px 0;
+	background: black;
+	color: white;
+	h2 {
+		font-size: 3em;
+	}
 }
 
-@media(min-width:768px) {
-
-    .about-section {
-        margin-top: 200px;
-        padding: 40px;
-    }
-
-}
 
