@@ -73,6 +73,11 @@
 		</div>
 
 		<div>
+			<%= f.label :dish, "Dish" %>
+			<%= f.select :dish, DISH %>
+		</div>
+
+		<div>
 			<%= f.label :image, "Upload Image" %>
 			<%= f.file_field :image %>
 		</div>
