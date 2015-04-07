@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   post '/login'    => 'sessions#create'
   delete '/logout' => 'sessions#destroy', as: :logout
 
-  resources :items, only: [:index, :edit, :update]
+  resources :items
   get '/list' => 'items#list'
   
   resource :cart, only: [:show]

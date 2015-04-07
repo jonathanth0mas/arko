@@ -5,6 +5,19 @@ class ItemsController < ApplicationController
 		@order_item = current_order.order_items.new
 	end
 
+	def new
+		@item = Item.new
+	end
+
+	def create
+		@item = Item.new(item_params)
+		if @item.save
+			redirect_to list_path
+		else
+			render "new"
+		end
+	end
+
 	def edit
 		@item = Item.find(params[:id])
 	end
