@@ -10,12 +10,6 @@ module SessionsHelper
     end
   end
 
-  # def admin
-  #   if @current_user.admin
-  #     redirect_to user_path(current_user)
-  #   end
-  # end
-
   def logged_in?
       !current_user.nil?
   end

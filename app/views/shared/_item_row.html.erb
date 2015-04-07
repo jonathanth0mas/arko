@@ -5,7 +5,7 @@
 	</div>
 	
 	<div class="image-holder">
-	<img src="<%= item.image %>" width="300" height="270" >
+	<img src="<%= item.image %>" class="item-image" width="300" height="270" >
 	<div class="tooltip">
 	<p class="tooltiptxt"><%= item.desc %></p>
 	</div>
@@ -19,7 +19,7 @@
 		</div>
 		<%= f.hidden_field :item_id, value: item.id %>
 		<div>
-		<%= f.select :unit_price, options_for_select({"Small (T) - #{number_to_currency item.smallT}" => "#{item.smallT}", "Medium (T) - #{number_to_currency item.mediumT}" => "#{item.mediumT}", "Large (T) - #{number_to_currency item.largeT}" => "#{item.largeT}", "Small (C) - #{number_to_currency item.smallC}" => "#{item.smallC}", "Medium (C) - #{number_to_currency item.mediumC}" => "#{item.mediumC}", "Large (C) - #{number_to_currency item.largeC}" => "#{item.largeC}", "Each - #{number_to_currency item.each}" => "#{item.each}", "Half - #{number_to_currency item.half}" => "#{item.half}", "Whole - #{number_to_currency item.whole}" => "#{item.whole}", "Full - #{number_to_currency item.full}" => "#{item.full}"}) %>
+		<%= f.select :unit_price, options_for_select({"Small (Tray) - #{number_to_currency item.smallT}" => "#{item.smallT}", "Medium (Tray) - #{number_to_currency item.mediumT}" => "#{item.mediumT}", "Large (Tray) - #{number_to_currency item.largeT}" => "#{item.largeT}", "Small (Cup) - #{number_to_currency item.smallC}" => "#{item.smallC}", "Medium (Cup) - #{number_to_currency item.mediumC}" => "#{item.mediumC}", "Large (Cup) - #{number_to_currency item.largeC}" => "#{item.largeC}", "Each - #{number_to_currency item.each}" => "#{item.each}", "Half - #{number_to_currency item.half}" => "#{item.half}", "Whole - #{number_to_currency item.whole}" => "#{item.whole}", "Full - #{number_to_currency item.full}" => "#{item.full}"}) %>
 		</div>
 		<div>
 	 	<%= f.submit "Add to Order", class: "btn btn-primary" %>
