@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     user = User.where(email: params[:login][:email]).first
     if user && user.authenticate(params[:login][:password])
       log_in(user)
-      redirect_to items_path
+      redirect_to root_path
     else
       redirect_to login_path
     end

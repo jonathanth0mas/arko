@@ -1,75 +1,71 @@
 <div class="row">
 	<h1 class="text-center">Add Item!</h1>
-		<div>
-		<%= link_to "Back to list", list_path %>
-		</div>
-
 	<div class="col-lg-offset-4 col-lg-4">
 		<%= form_for @item do |f| %>
 
-		<div>
+		<div class="form-group">
 		<%= f.label :name, "Name:" %>
-		<%= f.text_field :name %>
+		<%= f.text_field :name, class: "form-control" %>
 		</div>
 
-		<div>
+		<div class="form-group">
 			<%= f.label :desc, "Description" %>
-			<%= f.text_field :desc %>
+			<%= f.text_field :desc, class: "form-control" %>
 		</div>
 
-		<div>
+		<div class="form-group">
 		<%= f.label :smallC, "Small (Cup)" %>
-		<%= f.text_field :smallC %>
+		<%= f.text_field :smallC, class: "form-control" %>
 		</div>
 
-		<div>
+		<div class="form-group">
 		<%= f.label :mediumC, "Medium (Cup)" %>
-		<%= f.text_field :mediumC %>
+		<%= f.text_field :mediumC, class: "form-control" %>
 		</div>
 
-		<div>
+		<div class="form-group">
 		<%= f.label :largeC, "Large (Cup)" %>
-		<%= f.text_field :largeC %>
+		<%= f.text_field :largeC, class: "form-control" %>
 		</div>
 
-		<div>
+		<div class="form-group">
 		<%= f.label :smallT, "Small (Tray)" %>
-		<%= f.text_field :smallT %>
+		<%= f.text_field :smallT, class: "form-control" %>
 		</div>
 
-		<div>
+		<div class="form-group">
 		<%= f.label :mediumT, "Medium (Tray)" %>
-		<%= f.text_field :mediumT %>
+		<%= f.text_field :mediumT, class: "form-control" %>
 		</div>
 
-		<div>
+		<div class="form-group">
 		<%= f.label :largeT, "Large (Tray)" %>
-		<%= f.text_field :largeT %>
+		<%= f.text_field :largeT, class: "form-control" %>
 		</div>
 
-		<div>
+		<div class="form-group">
 		<%= f.label :each, "Each" %>
-		<%= f.text_field :each %>
+		<%= f.text_field :each, class: "form-control" %>
 		</div>
 
-		<div>
+		<div class="form-group">
 		<%= f.label :misc, "Misc" %>
-		<%= f.text_field :misc %>
+		<%= f.text_field :misc, class: "form-control" %>
 		</div>
 
-		<div>
+		<div class="form-group">
 		<%= f.label :half, "Half" %>
-		<%= f.text_field :half %>
+		<%= f.text_field :half, class: "form-control" %>
 		</div>
 
-		<div>
+		<div class="form-group">
 		<%= f.label :whole, "Whole" %>
-		<%= f.text_field :whole %>
+		<%= f.text_field :whole, class: "form-control" %>
 		</div>
 
-		<div>
+		<div class="form-group">
 		<%= f.label :full, "Full" %>
-		<%= f.text_field :full %>
+		<%= f.text_field :full, class: "form-control" %>
 		</div>
 
 		<div>
