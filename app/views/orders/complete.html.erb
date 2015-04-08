@@ -1,12 +1,12 @@
 <h1 class="text-center">Order Number: <%= @order.id %></h1>
 		<div class="text-center">
-			<%= @order.user.first %> <%= @order.user.last %>
+			<%= @order.user.first %> <%= @order.user.last %> - <%= @order.user.email %> - <%= @order.user.phone_number %>
 		</div>
+
 		<div class="text-center">
-			<%= @order.user.email %>
-		</div>
-		<div class="text-center">
-			<%= @order.user.phone_number %>
+			Your Total: <span class="complete-info"><%= number_to_currency current_order.subtotal %></span>
+			Pick Up Date: <span class="complete-info"><%= @order.date %></span>
+			Time: <span class="complete-info"><%= @order.time %></span>
 		</div>
 
 
@@ -35,9 +35,3 @@
 <br/>
 
 <% end %>
-
-<div class="text-center">
-	Your Total: <strong><%= number_to_currency current_order.subtotal %></strong>
-	Pick Up Date: <strong><%= @order.date %></strong>
-	Time: <strong><%= @order.time %></strong>
-</div>
