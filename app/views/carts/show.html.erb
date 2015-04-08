@@ -39,6 +39,9 @@
 <script type="text/javascript">
   $(document).ready(function(){
     $('.datepicker').datepicker();
-    $('.timepicker').timepicker();
+    $('.timepicker').timepicker({
+    	minTime: '08:00',
+    	maxTime: '07:30pm'
+    });
   });
 </script>
