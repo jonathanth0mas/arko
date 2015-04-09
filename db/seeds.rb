@@ -20,7 +20,7 @@ Item.create(name: "CHINESE MUSTARD WITH TOFU", smallT: 27, mediumT: 50, largeT: 
 Item.create(name: "CHOPSUEY", image: "http://i.imgur.com/WEvDsbv.jpg", smallT: 27, mediumT: 50, largeT: 95, smallC: 3.5, mediumC: 6, largeC: 12, dish: "Vegetable")
 Item.create(name: "DININGDING", image: "http://i.imgur.com/duTcxcD.jpg", smallT: 30, mediumT: 55, largeT: 105, smallC: 3.5, mediumC: 6, largeC: 12, dish: "Vegetable", desc: "Mixed vegetables w/ grilled fish")
 Item.create(name: "EGGPLANT WITH SPICY SAUCE", smallT: 27, mediumT: 50, largeT: 95, smallC: 3.5, mediumC: 6, largeC: 12, dish: "Vegetable")
-Item.create(name: "GINATAANG LANGKA", imgae: "http://i.imgur.com/TDDpUv0.jpg", smallT: 30, mediumT: 55, largeT: 105, smallC: 3.5, mediumC: 7, largeC: 14, dish: "Vegetable", desc: "Green jackfruit w/ coconut milk")
+Item.create(name: "GINATAANG LANGKA", image: "http://i.imgur.com/TDDpUv0.jpg", smallT: 30, mediumT: 55, largeT: 105, smallC: 3.5, mediumC: 7, largeC: 14, dish: "Vegetable", desc: "Green jackfruit w/ coconut milk")
 Item.create(name: "GINISANG MONGO", smallT: 25, mediumT: 45, largeT: 85, smallC: 3, mediumC: 5.5, largeC: 11, dish: "Vegetable", desc: "Sauteed mung bean w/ pork & shrimp")
 Item.create(name: "GINISANG PATOLA", image: "http://i.imgur.com/FKlgboK.jpg", smallT: 27, mediumT: 50, largeT: 95, smallC: 3, mediumC: 5.5, largeC: 11, dish: "Vegetable", desc: "Sauteed Sinqua")
 Item.create(name: "GINISANG PECHAY", smallT: 27, mediumT: 50, largeT: 95, smallC: 3, mediumC: 5.5, largeC: 11, dish: "Vegetable", desc: "Sauteed choy sum, green mustard, or bokchoy")
@@ -170,7 +170,7 @@ Item.create(name: "SINIGANG NA HIPON", smallT: 30, mediumT: 55, largeT: 105, sma
 Item.create(name: "SWEET & SOUR SHRIMP", smallT: 35, mediumT: 65, largeT: 130, dish:"Seafood(SHRIMP & KUHOL)", desc: "Coated shrimp and tofu with cornstarch")
 
 # Kambing
-Item.create(name: "KALDERETANG KAMBING", image: "http://i.imgur.com/QqaFJXx.jpg, "smallT: 38, mediumT: 75, largeT: 150, smallC: 4.5, mediumC: 8, largeC: 16, dish:"Kambing", desc: "Goat meat stewed in tomato sauce")
+Item.create(name: "KALDERETANG KAMBING", image: "http://i.imgur.com/QqaFJXx.jpg", smallT: 38, mediumT: 75, largeT: 150, smallC: 4.5, mediumC: 8, largeC: 16, dish:"Kambing", desc: "Goat meat stewed in tomato sauce")
 Item.create(name: "KILAWING KAMBING", smallT: 40, mediumT: 80, largeT: 160, smallC: 5, mediumC: 10, largeC: 20, dish:"Kambing", desc: "Goat's meat spiced w/ vinegar & pepper")
 
 # PerPiece Or Pound
