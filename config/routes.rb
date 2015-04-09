@@ -6,10 +6,10 @@ Rails.application.routes.draw do
   get '/signup' => 'users#new', as: :signup
 
   get '/login'     => 'sessions#new', as: :login
-  post '/login'    => 'sessions#create'
+  post '/login'    => 'sessions#create', as: :create_login
   delete '/logout' => 'sessions#destroy', as: :logout
 
-  resources :items, only: [:index, :edit, :update]
+  resources :items
   get '/list' => 'items#list'
   
   resource :cart, only: [:show]

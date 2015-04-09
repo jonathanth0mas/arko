@@ -8,11 +8,6 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:login][:password])
       log_in(user)
       redirect_to root_path
-      # if user.admin == true
-      #   redirect_to pickups_path(user)
-      # else
-      #  redirect_to user_path(user)
-      # end
     else
       redirect_to login_path
     end
