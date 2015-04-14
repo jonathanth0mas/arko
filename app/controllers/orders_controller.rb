@@ -8,8 +8,8 @@ class OrdersController < ApplicationController
 		@order_items = OrderItem.where(order_id: current_order.id)
 		@order = Order.find(current_order.id)
 		@order.update_attribute(:confirmed, true)
-	  @order.update_attributes(order_parameters)
-  end
+	    @order.update_attributes(order_parameters)
+  	end
 
   private
 
