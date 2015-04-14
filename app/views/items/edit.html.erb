@@ -76,6 +76,16 @@
 		</div>
 
 		<div>
+			<%= f.label :dish, "Dish" %>
+			<%= f.select :dish, DISH %>
+		</div>
+
+		<div>
+			<%= f.label :image, "Upload Image" %>
+			<%= f.file_field :image %>
+		</div>
+
+		<div>
 		<%= f.label :active, "Available" %>
 		<%= f.check_box :active, {}, "true", "false" %>
 		</div>
