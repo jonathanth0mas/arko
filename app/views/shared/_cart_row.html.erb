@@ -11,11 +11,13 @@
 
 	</div>
 	<div class="col-lg-4 cart-selection">
-		<p class="cart-size"> Size - <%= order_item.unit_price %></p>
 
 		<%= form_for order_item, remote: true do |f| %>
 
 			<span>Qty: </span><%= f.number_field :quantity, value: order_item.quantity.to_i, class: "qty" %>
+			<div>
+				<%= f.select :size, options_for_select({"Small (Tray) - #{number_to_currency item.smallT}" => "Small (Tray)", "Medium (Tray) - #{number_to_currency item.mediumT}" => "Medium (Tray)", "Large (Tray) - #{number_to_currency item.largeT}" => "Large (Tray)", "Small (Cup) - #{number_to_currency item.smallC}" => "Small (Cup)", "Medium (Cup) - #{number_to_currency item.mediumC}" => "Medium (Cup)", "Large (Cup) - #{number_to_currency item.largeC}" => "Large (Cup)", "Each - #{number_to_currency item.each}" => "Each", "Half - #{number_to_currency item.half}" => "Half", "Whole - #{number_to_currency item.whole}" => "Whole", "Full - #{number_to_currency item.full}" => "Full"}) %>
+			</div>
 			<%= f.hidden_field :item_id, value: item.id %>
 			<div>
 			<%= f.submit "Update Order", class: "btn btn-success update-btn" %>
