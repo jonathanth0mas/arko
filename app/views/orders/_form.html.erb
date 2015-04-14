@@ -1,0 +1,44 @@
+<h1 class="text-center">All Orders</h1>
+
+	<% @orders.each do |order| %>
+
+		<div class="pickup">
+			<h2>Order Number: <%= order.id %></h2>
+			<p>Pick Up Date & Time: <%= order.date %> - <%= order.time %></p>
+			<%= link_to "Completed", order, method: :delete, class: "btn btn-danger" %>
+		</div>
+		<div class="order-index">
+
+				<div class="col-lg-4 text-center user-info">
+					<span class="glyphicon glyphicon-user"></span> <%= order.user.first %> <%= order.user.last %>
+				</div>
+				<div class="col-lg-4 text-center user-info">
+					<span class="glyphicon glyphicon-envelope"></span> <%= order.user.email %>
+				</div>
+				<div class="col-lg-4 text-center user-info">
+					<span class="glyphicon glyphicon-earphone"></span> <%= order.user.phone_number %>
+				</div>
+
+				<% order.order_items.each do |order| %>
+					<div class="row">
+						<div class="col-lg-4 text-center">
+							<%= order.item.name %>
+						</div>
+						<div class="col-lg-4 text-center">
+							<%= order.unit_price %>
+						</div>
+						<div class="col-lg-4 text-center">
+							Qty: <%= order.quantity %>
+						</div>
+					</div>
+				<% end %>
+
+		</div>
+	<% end %>
+
+
+
+
+
+
+

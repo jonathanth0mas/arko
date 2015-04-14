@@ -11,6 +11,12 @@ class OrdersController < ApplicationController
 	    @order.update_attributes(order_parameters)
   	end
 
+  	def destroy
+  		@order = Order.find(params[:id])
+  		@order.destroy
+  		@order = 
+  	end
+
   private
 
   def order_parameters
