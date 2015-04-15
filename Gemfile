@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.3'
+ruby '2.2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
@@ -21,6 +21,8 @@ gem 'active_model_serializers'
 gem 'figaro'
 gem 'carrierwave'
 gem 'fog'
+
+gem 'eventmachine', github: "eventmachine/eventmachine"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
