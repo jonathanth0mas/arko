@@ -1,7 +1,11 @@
 <div class="row">
 	<div class="col-lg-offset-4 col-lg-4">
-		<h1 class="text-center">Welcome Kapamilya!</h1>
 
+		<% if flash[:notice] %>
+			<%= flash[:notice] %>
+		<% end %>		
+
+		<h1 class="text-center">Welcome Kapamilya!</h1>
 
 		<%= form_for :login, :url => create_login_path do |f| %>
 

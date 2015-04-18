@@ -9,7 +9,8 @@ class SessionsController < ApplicationController
       log_in(user)
       redirect_to root_path
     else
-      render "sessions/new"
+      flash[:notice] = "Please Try Again"
+      redirect_to login_path
     end
   end
 
