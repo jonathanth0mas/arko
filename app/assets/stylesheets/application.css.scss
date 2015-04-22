@@ -22,14 +22,23 @@
 html,
 body {
     font-family: 'Shadows Into Light Two', cursive;
-}
-
-body {
-    padding-top: 80px;
+    background: image-url('white.jpg') no-repeat center;
+    background-size: cover;
 }
 
 .arko_logo {
     padding: 7px;
+}
+
+.btn-login {
+    margin-top: 40px;
+}
+
+.btn-login a {
+    border: 5px solid #db241b;
+    border-radius: 10px;
+    padding: 20px;
+    color: #db241b;
 }
 
 .navbar-fixed-top .nav {
@@ -46,14 +55,18 @@ footer {
 }
 
 
-@media(min-width:768px) {
-    body {
-        padding-top: 80px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
-    }
+// @media(min-width:768px) {
+//     body {
+//         padding-top: 80px; Required padding for .navbar-fixed-top. Change if height of navigation changes.
+//     }
 
-    .navbar-fixed-top .navbar-brand {
-        padding: 15px 0;
-    }
+//     .navbar-fixed-top .navbar-brand {
+//         padding: 15px 0;
+//     }
 
-}
+//     .c-main {
+//         margin-left: 100px;
+//     }
+
+// }
 
