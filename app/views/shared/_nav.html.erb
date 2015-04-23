@@ -60,13 +60,13 @@
 </nav> -->
 
 <header>
-    <nav>
+    <nav class="nav-bar">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
+            <div class="row nav-row">
+                <div class="col-sm-2">
                     <a href="/"><%= image_tag("ARKO.png", size: "205x100", alt: "Arko Logo", class: "arko_logo") %></a> 
                 </div>
-                <div class="col-lg-offset-8 col-lg-2 text-center btn-login">
+                <div class="col-sm-offset-8 col-sm-2 text-center btn-login">
                     <%= link_to "Log In", login_path %>
                 </div>
             </div>

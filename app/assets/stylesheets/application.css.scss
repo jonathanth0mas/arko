@@ -50,23 +50,21 @@ body {
     color: white;
 }
 
+.nav-row div {
+    display: inline-block;
+}
+
 footer {
     padding: 30px 0;
 }
 
 
-// @media(min-width:768px) {
-//     body {
-//         padding-top: 80px; Required padding for .navbar-fixed-top. Change if height of navigation changes.
-//     }
+@media(max-width:767px) {
+    .btn-login {
+        float: right;
+    }
+}
 
-//     .navbar-fixed-top .navbar-brand {
-//         padding: 15px 0;
-//     }
 
-//     .c-main {
-//         margin-left: 100px;
-//     }
 
-// }
 
