@@ -2,27 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.background-c {
-	z-index: -99;
-	position: relative;
+.bbq-banner {
+	font-family: 'Gentium Basic', cursive;
 }
 
-.main-banner {
-	// background: image-url("banner.gif") no-repeat center;
-	background-size: cover;
-	height: 600px;
-	font-family: 'Sigmar One', cursive;	
-	.o-btn {
-		margin-top: 20px;
-	}
-}
-
-.c-main {
-	margin-top: 150px;
-	color: black;
-	h1 {
-		font-size: 6em;
-	}
+.pork-banner {
+	font-family: 'Oswald', sans-serif;
+	text-align: left;
 }
 
 .about-section {
@@ -40,6 +26,7 @@
   and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
   Inspired from:  http://codepen.io/Rowno/pen/Afykb 
 */
+
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   transition-property: opacity;
