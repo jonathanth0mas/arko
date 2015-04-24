@@ -72,7 +72,7 @@ Item.create(name: "CHICKEN AFRITADA", :remote_image_url => "http://i.imgur.com/M
 Item.create(name: "CHICKEN BBQ ON STICK", :remote_image_url => "http://i.imgur.com/0cCtp7r.jpg", misc: "MARKET PRICE", dish: "Chicken", desc:"Grilled marinated chicken")
 Item.create(name: "CHICKEN EMPANADA", :remote_image_url => "http://i.imgur.com/lyZ4qxZ.jpg", misc: "MARKET PRICE", dish: "Chicken", desc:"Chicken stuffed pie")
 Item.create(name: "CHICKEN PASTEL", :remote_image_url => "http://i.imgur.com/Xc8Skd4.jpg", smallT: 25, mediumT: 45, largeT: 85, smallC: 3.5, mediumC: 6, largeC: 11, dish: "Chicken", desc:"Creamy chicken dish encased in pie crust")
-Item.create(name: "PINEAPPLE CHICKEN", :remote_image_url => "http://i.imgur.com/8ONNinZ.jpg", smallT: 25, mediumT: 45, largeT: 85, smallC: 3.5, mediumC: 6, largeC: 11, smallC: 3.5, mediumC: 6, largeC: 11, dish: "Chicken", desc:"Sweet & sour chicken lightly sweetened w/ honey")
+Item.create(name: "PINEAPPLE CHICKEN", :remote_image_url => "http://i.imgur.com/8ONNinZ.jpg", smallT: 25, mediumT: 45, largeT: 85, smallC: 3.5, mediumC: 6, largeC: 11, dish: "Chicken", desc:"Sweet & sour chicken lightly sweetened w/ honey")
 Item.create(name: "CHICKEN SINAMPALUKAN", :remote_image_url => "http://i.imgur.com/dQuaPb4.jpg", smallT: 25, mediumT: 45, largeT: 85, smallC: 3.5, mediumC: 6, largeC: 11, dish: "Chicken", desc:"Chicken, vegetables, and tamarind leaves")
 Item.create(name: "CHICKEN LOLLIPOP", :remote_image_url => "http://i.imgur.com/FJCb2An.jpg", mediumT: 55, largeT: 105, dish: "Chicken", desc:"Breaded chicken in the form of a lollipop")
 
