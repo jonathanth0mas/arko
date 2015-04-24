@@ -1,5 +1,33 @@
 <% if logged_in? == false %>
 
+
+<div class="container">
+  <div class="col-lg-offset-2">
+    <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <%= image_tag ('bbq.jpg'), size:"800x900", class: "background-c" %>
+        </div>
+        <div class="item">
+          <%= image_tag ('pork.jpg'), size:"800x900" %>
+        </div>
+        <div class="item">
+          <%= image_tag ('rolls.jpg'), size:"800x900" %>
+        </div>
+      </div>
+
+      
+        <a href="#carousel-example-generic" role="button" data-slide="prev">
+        </a>
+        <a href="#carousel-example-generic" role="button" data-slide="next">
+        </a>
+      </div>
+    </div>
+</div>
+
+
+
 <div class="row main-banner text-center">
     <div class="col-lg-offset-2 col-lg-8 c-main">
         <h1>Place an order today!</h1>

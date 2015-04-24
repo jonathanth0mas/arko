@@ -17,11 +17,10 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-@import url('//fonts.googleapis.com/css?family=Josefin+Sans|Gloria+Hallelujah|Pacifico|Amatic+SC|Courgette|Shadows+Into+Light+Two|Handlee');
+@import url('//fonts.googleapis.com/css?family=PT+Sans|Gentium+Basic|Sigmar+One|Oswald');
 
 html,
 body {
-    font-family: 'Shadows Into Light Two', cursive;
     background: image-url('white.jpg') no-repeat center;
     background-size: cover;
 }
@@ -31,25 +30,17 @@ body {
 }
 
 .btn-login {
-    margin-top: 40px;
-    float: right;
+    margin-top: 10px;
 }
 
-.btn-login a {
-    border: 5px solid #db241b;
-    border-radius: 10px;
-    padding: 15px;
-    color: #db241b;
-}
+/*********************************************
 
-.btn-login a:hover {
-    background: tomato;
-    color: white;
-    text-decoration: none;
-}
+            Nav
 
-.nav-row div {
-    display: inline-block;
+************************************************/
+
+.navbar-inverse {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
