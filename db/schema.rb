@@ -28,9 +28,9 @@ ActiveRecord::Schema.define(version: 20150401024314) do
     t.string   "misc"
     t.string   "dish"
     t.string   "image"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
-    t.boolean  "active",     default: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.boolean  "active",     default: true
     t.float    "half"
     t.float    "whole"
     t.float    "full"
