@@ -323,8 +323,6 @@ GEM
       pry (>= 0.9.11)
     pry-toys (0.0.2)
       pry
-    puma (2.11.1)
-      rack (>= 1.1, < 2.0)
     rack (1.6.0)
     rack-contrib (1.2.0)
       rack (>= 0.9.1)
@@ -505,7 +503,6 @@ DEPENDENCIES
   poltergeist
   pry
   pry-toys
-  puma
   rails (= 4.2.0)
   rails_12factor
   responders (~> 2.0)

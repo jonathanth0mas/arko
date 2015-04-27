@@ -79,6 +79,6 @@ group :production do
 	gem 'rails_12factor'
 	gem 'thin'
 	# gem 'unicorn', '4.8.3'
-  gem 'puma'
+  # gem 'puma'
 end
 
