@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.static {
+  background: image-url('wood.jpg') no-repeat center;
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+}
+
+
 .bbq-banner {
 	font-family: 'Gentium Basic', cursive;
 }
