@@ -17,6 +17,7 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import "font-awesome";
 @import url('//fonts.googleapis.com/css?family=PT+Sans|Gentium+Basic|Anton|Oswald|Jura|Comfortaa');
 
 body {
@@ -63,5 +64,28 @@ body {
 	font-family: 'PT Sans', sans-serif;
 }
 
+/*********************************************
+
+            Footer
+
+************************************************/
+
+.foot {
+    // background: black;
+    padding: 20px;
+    color: white;
+    i {
+        font-size: 2em;
+    }
+    ul {
+        padding: 0;
+    }
+}
+
+.foot ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+}
 
 

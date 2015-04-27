@@ -1,7 +1,7 @@
 <%= render 'shared/navv' %>
 <section class="signup-page">
 	<div class="container">
-		<div class="row">
+		<div class="row signup-row">
 			<div class="col-md-4 col-md-offset-4">
 				<ul class="list-group">
 				  <% @user.errors.full_messages.each do |msg| %>
@@ -41,5 +41,10 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="sign-foot">
+	<%= render 'shared/footer' %>
+	</div>
 </section>
+
 
