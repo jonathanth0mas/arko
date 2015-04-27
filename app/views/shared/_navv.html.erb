@@ -92,6 +92,9 @@
                 <li>
                     <%= link_to "Edit Items", list_path %>
                 </li>
+                <li class="cart-text">
+                    <%= render 'shared/cart_text' %>    
+                </li>
                 <li>
                     <%= link_to "Log Out", logout_path, method: :delete %>
                 </li>

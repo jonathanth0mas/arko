@@ -1,4 +1,5 @@
 <% if logged_in? == false %>
+<section class="static">
 <%= render 'shared/nav' %>
 <div id="carousel-example-generic" class="carousel slide carousel-fade col-lg-offset-2 col-lg-8" data-ride="carousel">
 
@@ -125,7 +126,7 @@
     </div>
 
  
-
+</section>
 <% end %>
 
 <% if logged_in? == true %>
