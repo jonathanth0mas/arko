@@ -1,101 +1,104 @@
 <%= render 'shared/navv' %>
-<div class="row">
-	<h1 class="text-center">Update Item!</h1>
-	<div class="col-lg-offset-2 col-lg-5">
-		<img src="<%= @item.image %>" width="450" height="400">
-		<div>
-		<%= link_to "Back to list", list_path %>
+<section class="edit-page">
+	<div class="container">
+		<div class="row">
+			<h1 class="text-center">Update Item!</h1>
+			<div class="col-lg-offset-2 col-lg-5">
+				<img src="<%= @item.image %>" width="450" height="400">
+				<div>
+				<%= link_to "Back to list", list_path %>
+				</div>
+			</div>
+
+			<div class="col-lg-5">
+				<%= form_for @item do |f| %>
+
+				<div>
+				<%= f.label :name, "Name:" %>
+				<%= f.text_field :name %>
+				</div>
+
+				<div>
+					<%= f.label :desc, "Description" %>
+					<%= f.text_field :desc %>
+				</div>
+
+				<div>
+				<%= f.label :smallC, "Small (Cup)" %>
+				<%= f.text_field :smallC %>
+				</div>
+
+				<div>
+				<%= f.label :mediumC, "Medium (Cup)" %>
+				<%= f.text_field :mediumC %>
+				</div>
+
+				<div>
+				<%= f.label :largeC, "Large (Cup)" %>
+				<%= f.text_field :largeC %>
+				</div>
+
+				<div>
+				<%= f.label :smallT, "Small (Tray)" %>
+				<%= f.text_field :smallT %>
+				</div>
+
+				<div>
+				<%= f.label :mediumT, "Medium (Tray)" %>
+				<%= f.text_field :mediumT %>
+				</div>
+
+				<div>
+				<%= f.label :largeT, "Large (Tray)" %>
+				<%= f.text_field :largeT %>
+				</div>
+
+				<div>
+				<%= f.label :each, "Each" %>
+				<%= f.text_field :each %>
+				</div>
+
+				<div>
+				<%= f.label :misc, "Misc" %>
+				<%= f.text_field :misc %>
+				</div>
+
+				<div>
+				<%= f.label :half, "Half" %>
+				<%= f.text_field :half %>
+				</div>
+
+				<div>
+				<%= f.label :whole, "Whole" %>
+				<%= f.text_field :whole %>
+				</div>
+
+				<div>
+				<%= f.label :full, "Full" %>
+				<%= f.text_field :full %>
+				</div>
+
+				<div>
+					<%= f.label :dish, "Dish" %>
+					<%= f.select :dish, DISH %>
+				</div>
+
+				<div>
+					<%= f.label :image, "Upload Image" %>
+					<%= f.file_field :image %>
+				</div>
+
+				<div>
+				<%= f.label :active, "Available" %>
+				<%= f.check_box :active, {}, "true", "false" %>
+				</div>
+
+				<div>
+				<%= f.submit "Update", class: "btn btn-primary" %>
+				</div>
+
+				<% end %>
+			</div>
 		</div>
 	</div>
-
-	<div class="col-lg-5">
-		<%= form_for @item do |f| %>
-
-		<div>
-		<%= f.label :name, "Name:" %>
-		<%= f.text_field :name %>
-		</div>
-
-		<div>
-			<%= f.label :desc, "Description" %>
-			<%= f.text_field :desc %>
-		</div>
-
-		<div>
-		<%= f.label :smallC, "Small (Cup)" %>
-		<%= f.text_field :smallC %>
-		</div>
-
-		<div>
-		<%= f.label :mediumC, "Medium (Cup)" %>
-		<%= f.text_field :mediumC %>
-		</div>
-
-		<div>
-		<%= f.label :largeC, "Large (Cup)" %>
-		<%= f.text_field :largeC %>
-		</div>
-
-		<div>
-		<%= f.label :smallT, "Small (Tray)" %>
-		<%= f.text_field :smallT %>
-		</div>
-
-		<div>
-		<%= f.label :mediumT, "Medium (Tray)" %>
-		<%= f.text_field :mediumT %>
-		</div>
-
-		<div>
-		<%= f.label :largeT, "Large (Tray)" %>
-		<%= f.text_field :largeT %>
-		</div>
-
-		<div>
-		<%= f.label :each, "Each" %>
-		<%= f.text_field :each %>
-		</div>
-
-		<div>
-		<%= f.label :misc, "Misc" %>
-		<%= f.text_field :misc %>
-		</div>
-
-		<div>
-		<%= f.label :half, "Half" %>
-		<%= f.text_field :half %>
-		</div>
-
-		<div>
-		<%= f.label :whole, "Whole" %>
-		<%= f.text_field :whole %>
-		</div>
-
-		<div>
-		<%= f.label :full, "Full" %>
-		<%= f.text_field :full %>
-		</div>
-
-		<div>
-			<%= f.label :dish, "Dish" %>
-			<%= f.select :dish, DISH %>
-		</div>
-
-		<div>
-			<%= f.label :image, "Upload Image" %>
-			<%= f.file_field :image %>
-		</div>
-
-		<div>
-		<%= f.label :active, "Available" %>
-		<%= f.check_box :active, {}, "true", "false" %>
-		</div>
-
-		<div>
-		<%= f.submit "Update", class: "btn btn-primary" %>
-		</div>
-
-		<% end %>
-	</div>
-</div>
-
+</section>
