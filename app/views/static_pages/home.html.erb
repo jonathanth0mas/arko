@@ -1,7 +1,30 @@
 <% if logged_in? == false %>
-<section class="static">
 <%= render 'shared/nav' %>
-<div id="carousel-example-generic" class="carousel slide carousel-fade col-lg-offset-2 col-lg-8" data-ride="carousel">
+<section class="static">
+<div class="container">
+  <div class="row primary">
+    <div class="col-lg-offset-2 col-lg-8">
+      <h1 class="text-center main">Order your favorite Filipino food now!</h1>
+      <h3 class="text-center">Add to cart from a variety of selection</h3>
+      <div class="text-center">
+        <%= link_to "Sign Up", signup_path, class: "btn btn-danger btn-lg" %>
+      </div>
+    </div>
+  </div>
+
+<div class="owl-carousel gallery">
+  <div><%= image_tag ('rolls.jpg') %></div>
+  <div><%= image_tag ('pork.jpg') %></div>
+  <div><%= image_tag ('bbq.jpg') %></div>
+  <div><%= image_tag ('rolls.jpg') %></div>
+  <div><%= image_tag ('bbq.jpg') %></div>
+  <div><%= image_tag ('pork.jpg') %></div>
+</div>
+
+  <%= render 'shared/footer' %>
+</div>
+
+<!-- <div id="carousel-example-generic" class="carousel slide carousel-fade col-lg-offset-2 col-lg-8" data-ride="carousel">
 
   <div class="carousel-inner" role="listbox">
     <div class="item active">
@@ -11,14 +34,14 @@
         <div class="row bbq-banner text-center">
             <div class="col-lg-12">
                 <h1>Place an order today!</h1>
-                <h3>Add to cart from a variety of selection</h3>
+                <h3>Add to cart from a variety of selection</h3> -->
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">
+               <!--  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">
                   Sign Up
-                </button>
+                </button> -->
 
                 <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-body">
@@ -63,11 +86,11 @@
                         </div>
 
 
-                      </div>
+                      </div> -->
                       <!-- <div class="modal-footer">
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             </div> -->
-                    </div>
+                    <!-- </div>
                   </div>
                  </div>
             </div>
@@ -114,7 +137,7 @@
     </a>
   </div>
 
-  
+  <div class="row">
     <div class="col-lg-offset-2 col-lg-8">
       <h2>About Us!</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -125,89 +148,61 @@
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <%= render 'shared/footer' %>
     </div>
+  </div>
+ -->
+  <!-- <div class="row">
+    <div class="col-lg-offset-2 col-lg-8">
+      <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=1425%20East%20Colorado%20Street%2C%20Glendale%2C%20CA%2C%20United%20States&key=AIzaSyAPxU_ITR3tEbofKsMNQhPNNqr5JnyXifI"></iframe>
+    </div>
+  </div> -->
 
 </section>
 <% end %>
 
 <% if logged_in? == true %>
-<section class="static">
 <%= render 'shared/nav' %>
-<div id="carousel-example-generic" class="carousel slide carousel-fade col-lg-offset-2 col-lg-8" data-ride="carousel">
-
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <%= image_tag ('rolls.jpg') %>
-      <div class="carousel-caption">
-        
-        <div class="row bbq-banner text-center">
-            <div class="col-lg-12">
-                <h1>Place an order today!</h1>
-                <h3>Add to cart from a variety of selection</h3>
-                <div>
-                <%= link_to "Order Now", items_path, class: "btn btn-danger btn-lg" %>
-                </div>
-            </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag ('pork.jpg') %>
-      <div class="carousel-caption">
-        
-        <div class="row pork-banner">
-            <div class="col-lg-6">
-                <h1>Authentic, gourmet, fresh</h1>
-                <h3>Try our signature dishes</h3>
-                <div class="o-btn">
-                <%= link_to "Sign Up", signup_path, class: "btn btn-danger" %>
-                </div>
-            </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag ('bbq.jpg') %>
-
-      <div class="carousel-caption">
-        
-        <div class="row rolls-banner text-center">
-            <div class="col-lg-12">
-                <h1>Place an order today!</h1>
-                <h3>Add to cart from a variety of selection</h3>
-                <div class="o-btn">
-                <%= link_to "Order Now", items_path, class: "btn btn-danger" %>
-                </div>
-            </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  
-    <a href="#carousel-example-generic" role="button" data-slide="prev">
-    </a>
-    <a href="#carousel-example-generic" role="button" data-slide="next">
-    </a>
-  </div>
-
-  
+<section class="static">
+<div class="container">
+  <div class="row primary">
     <div class="col-lg-offset-2 col-lg-8">
-      <h2>About Us!</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <%= render 'shared/footer' %>
+      <h1 class="text-center main">Order your favorite Filipino food now!</h1>
+      <h3 class="text-center">Add to cart from a variety of selection</h3>
+      <div class="text-center">
+        <%= link_to "Order Now", list_path, class: "btn btn-danger btn-lg" %>
+      </div>
     </div>
+  </div>
 
-    <section>
+<div class="owl-carousel gallery">
+  <div><%= image_tag ('rolls.jpg') %></div>
+  <div><%= image_tag ('pork.jpg') %></div>
+  <div><%= image_tag ('bbq.jpg') %></div>
+  <div><%= image_tag ('rolls.jpg') %></div>
+  <div><%= image_tag ('bbq.jpg') %></div>
+  <div><%= image_tag ('pork.jpg') %></div>
+</div>
+
+  <%= render 'shared/footer' %>
+</div>
+
+<section>
 
 <% end %>
+
+<script>
+  
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items:3,
+      loop:true,
+      margin:10,
+      autoplay:true,
+      autoplayTimeout:1000,
+      autoplayHoverPause:true
+    });
+  });
+
+</script>
 
 
 
