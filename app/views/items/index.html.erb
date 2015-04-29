@@ -1,15 +1,18 @@
-<section class="items-page">
 <%= render 'shared/navv' %>
-<div class="row search">
-	<div class="col-lg-offset-2 col-lg-8">
-		<h1 class="text-center"><strong class="bounce"><%= image_tag ('Untitled-1.png') %></strong></h1>
-		<div class="text-center">
-			<%= form_tag(items_path, method: "get") do %>
-				
-				<%= select_tag "dish", options_from_collection_for_select(DISH, "to_s", "to_s") %>
-				<%= submit_tag "Search", class: "btn btn-success" %>
+<section class="items-page">
+<div class="container">
+	<div class="row search">
+		<div class="col-lg-offset-2 col-lg-8">
+			<h1 class="text-center"><strong class="bounce"><%= image_tag ('Untitled-1.png') %></strong></h1>
+			<div class="text-center">
+				<%= form_tag(items_path, method: "get") do %>
+					
+					<%= select_tag "dish", options_from_collection_for_select(DISH, "to_s", "to_s") %>
+					<%= submit_tag "Search", class: "btn btn-success" %>
 
-			<% end %>
+				<% end %>
+				<h2>"Craving for Filipino food?"</h2>
+			</div>
 		</div>
 	</div>
 </div>

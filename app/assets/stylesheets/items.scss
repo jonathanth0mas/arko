@@ -19,6 +19,10 @@
 	padding: 10px;
 }
 
+#dish {
+	height: 20px;
+}
+
 .item-index {
 	margin-top: 10px;
 }
@@ -27,6 +31,7 @@
 	color: white;
 	background: black;
 	padding: 20px;
+	margin: 0;
 }
 
 .items-page {
@@ -36,10 +41,16 @@
 .search {
 	// background: image-url("cartoon.png");
 	margin-top: 81px;
-	padding: 85px;
+	padding: 70px;
+	#dish {
+		margin-top: 20px;
+	}
 	h1 {
 		font-size: 5em;
 		margin: 0;
+	}
+	h2 {
+		margin-top: 40px;
 	}
 }
 
@@ -49,6 +60,10 @@
 
 .item-image {
 	border: 1px solid black;
+}
+
+.i-name {
+	font-size: 1em;
 }
 
 /*********************************************
