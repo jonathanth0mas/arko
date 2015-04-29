@@ -24,138 +24,6 @@
   <%= render 'shared/footer' %>
 </div>
 
-<!-- <div id="carousel-example-generic" class="carousel slide carousel-fade col-lg-offset-2 col-lg-8" data-ride="carousel">
-
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <%= image_tag ('rolls.jpg') %>
-      <div class="carousel-caption">
-        
-        <div class="row bbq-banner text-center">
-            <div class="col-lg-12">
-                <h1>Place an order today!</h1>
-                <h3>Add to cart from a variety of selection</h3> -->
-                <!-- Button trigger modal -->
-               <!--  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">
-                  Sign Up
-                </button> -->
-
-                <!-- Modal -->
-                <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-md-4 col-md-offset-4">
-                            <ul class="list-group">
-                              <% @user.errors.full_messages.each do |msg| %>
-                                <li class="list-group-item list-group-item-danger"><%= msg %></li>
-                              <% end %>
-                            </ul>
-                            </br>
-                            <h1 class="text-center">Sign Up</h1>
-
-                            <%= form_for @user do |f| %>
-                              
-                              <div class="form-group">
-                                <%= f.text_field :first, placeholder: "First", class: "form-control"  %>
-                              </div>
-                              <div class="form-group">
-                                <%= f.text_field :last, placeholder: "Last", class: "form-control"  %>
-                              </div>
-                              <div class="form-group">
-                                <%= f.text_field :email, placeholder: "Email", class: "form-control"  %>
-                              </div>
-                              <div class="form-group">
-                                <%= f.text_field :address, placeholder: "Full Address", class: "form-control"  %>
-                              </div>
-                              <div class="form-group">
-                                <%= f.text_field :phone_number, placeholder: "Phone Number", class: "form-control"  %>
-                              </div>
-                              <div class="form-group">
-                                <%= f.password_field :password, placeholder: "Password", class: "form-control"  %>
-                              </div>
-                              <div class="form-group">
-                                <%= f.password_field :password_confirmation, placeholder: "Confirm Password", class: "form-control"  %>
-                              </div>
-                              <div class="text-center">
-                              <%= f.submit "Sign Up", class: "btn btn-primary" %>
-                              </div>
-                            <% end %>
-                          </div>
-                        </div>
-
-
-                      </div> -->
-                      <!-- <div class="modal-footer">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            </div> -->
-                    <!-- </div>
-                  </div>
-                 </div>
-            </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag ('pork.jpg') %>
-      <div class="carousel-caption">
-        
-        <div class="row pork-banner">
-            <div class="col-lg-6">
-                <h1>Authentic, gourmet, fresh</h1>
-                <h3>Try our signature dishes</h3>
-                <div class="o-btn">
-                <%= link_to "Sign Up", signup_path, class: "btn btn-danger" %>
-                </div>
-            </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag ('bbq.jpg') %>
-
-      <div class="carousel-caption">
-        
-        <div class="row rolls-banner text-center">
-            <div class="col-lg-12">
-                <h1>Place an order today!</h1>
-                <h3>Add to cart from a variety of selection</h3>
-            </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  
-    <a href="#carousel-example-generic" role="button" data-slide="prev">
-    </a>
-    <a href="#carousel-example-generic" role="button" data-slide="next">
-    </a>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-offset-2 col-lg-8">
-      <h2>About Us!</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <%= render 'shared/footer' %>
-    </div>
-  </div>
- -->
-  <!-- <div class="row">
-    <div class="col-lg-offset-2 col-lg-8">
-      <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=1425%20East%20Colorado%20Street%2C%20Glendale%2C%20CA%2C%20United%20States&key=AIzaSyAPxU_ITR3tEbofKsMNQhPNNqr5JnyXifI"></iframe>
-    </div>
-  </div> -->
-
 </section>
 <% end %>
 
@@ -167,7 +35,7 @@
       <h1 class="text-center main">Order your favorite Filipino food now!</h1>
       <h3 class="text-center">Add to cart from a variety of selection</h3>
       <div class="text-center">
-        <%= link_to "Order Now", list_path, class: "btn btn-danger btn-lg" %>
+        <%= link_to "Order Now", items_path, class: "btn btn-danger btn-lg" %>
       </div>
     </div>
   </div>
