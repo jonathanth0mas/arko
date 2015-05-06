@@ -5,7 +5,8 @@
 	</div>
 	
 	<div class="image-holder">
-	<img src="<%= item.image %>" class="item-image" width="270" height="200" >
+	<!-- <img src="<%= item.image %>" class="item-image" width="270" height="200" > -->
+	<%= image_tag "#{item.image}" %>
 	<div class="tooltip">
 	<p class="tooltiptxt"><%= item.desc %></p>
 	</div>
