@@ -1,7 +1,7 @@
-<%= render 'shared/navv' %>
+<%= render 'shared/navvv' %>
 <section class="complete-page">
 	<h1 class="text-center">Order Number: <%= @order.id %></h1>
-	<p class="text-center">Order placed at: <%= @order.created_at.getlocal.strftime("%D - %I:%M%p") %></p>
+	<p class="text-center">Order placed at: <%= @order.created_at.getlocal.strftime("%D - %I:%M%p")	 %></p>
 			<div class="text-center">
 				<%= @order.user.first %> <%= @order.user.last %> - <%= @order.user.email %> - <%= @order.user.phone_number %>
 			</div>
@@ -22,7 +22,7 @@
 	<div class="container">
 		<div class="row complete-items">
 			<div class="col-lg-offset-4 col-lg-2">
-				<img src="<%= order_item.item.image %>" class="item-image" width="150" height="130">
+				<img src="<%= order_item.item.image %>" class="item-image" width="120" height="100">
 			</div>
 			<div class="col-lg-4">
 				<div>
