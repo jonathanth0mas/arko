@@ -6,7 +6,7 @@
 
 		<div class="order-info">
 			<div class="pickup">
-				<h2>Order Number: <%= order.id %></h2> <p>Placed At: <%= order.created_at.strftime("%B %d, %Y | %l:%M%p") %></p>
+				<h2>Order Number: <%= order.id %></h2> <p>Placed At: <%= order.created_at.getlocal.strftime("%D - %I:%M%p") %></p>
 				<p>Pick Up Date & Time: <span class="order-span"><%= order.date %></span class="order-span"> - <span class="order-span"><%= order.time %></span class="order-span"></p>
 			</div>
 			<div class="order-index">

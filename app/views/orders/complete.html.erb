@@ -1,6 +1,7 @@
 <%= render 'shared/navv' %>
 <section class="complete-page">
 	<h1 class="text-center">Order Number: <%= @order.id %></h1>
+	<p class="text-center">Order placed at: <%= @order.created_at.getlocal.strftime("%D - %I:%M%p") %></p>
 			<div class="text-center">
 				<%= @order.user.first %> <%= @order.user.last %> - <%= @order.user.email %> - <%= @order.user.phone_number %>
 			</div>
