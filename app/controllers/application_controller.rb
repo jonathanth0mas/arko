@@ -5,6 +5,8 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
   helper_method :current_order
 
+  add_flash_types :warning
+
   def current_order
   	if !session[:order_id].nil?
   		Order.find(session[:order_id])

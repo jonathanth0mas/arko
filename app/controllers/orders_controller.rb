@@ -9,6 +9,9 @@ class OrdersController < ApplicationController
 		@order = Order.find(current_order.id)
 		@order.update_attribute(:confirmed, true)
 	    @order.update_attributes(order_parameters)
+	    if @order.save
+	    	flash[:notice] = "An order is placed" 
+	    end
   	end
 
   private

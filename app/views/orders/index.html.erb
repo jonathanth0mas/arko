@@ -1,5 +1,12 @@
 <%= render 'shared/navv' %>
 <section class="orders-page">
+
+	<div class="flash text-center flash-text">
+		<% if flash[:notice] %>
+			<%= flash[:notice] %>
+		<% end %>
+	</div>
+
 	<h1 class="text-center">All Orders</h1>
 
 		<% @orders.each do |order| %>
@@ -40,10 +47,6 @@
 
 		</div>
 </section>
-
-
-
-
 
 
 

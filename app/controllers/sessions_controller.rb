@@ -9,8 +9,7 @@ class SessionsController < ApplicationController
       log_in(user)
       redirect_to root_path
     else
-      flash[:notice] = "Please Try Again"
-      redirect_to login_path
+      redirect_to login_path, warning: "Please Try Again"
     end
   end
 
