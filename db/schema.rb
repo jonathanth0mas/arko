@@ -18,22 +18,22 @@ ActiveRecord::Schema.define(version: 20150427052121) do
 
   create_table "items", force: :cascade do |t|
     t.string   "name"
-    t.float    "smallC"
-    t.float    "mediumC"
-    t.float    "largeC"
-    t.float    "smallT"
-    t.float    "mediumT"
-    t.float    "largeT"
-    t.float    "each"
+    t.string   "smallC"
+    t.string   "mediumC"
+    t.string   "largeC"
+    t.string   "smallT"
+    t.string   "mediumT"
+    t.string   "largeT"
+    t.string   "each"
     t.string   "misc"
     t.string   "dish"
     t.string   "image"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
     t.boolean  "active",     default: true
-    t.float    "half"
-    t.float    "whole"
-    t.float    "full"
+    t.string   "half"
+    t.string   "whole"
+    t.string   "full"
     t.string   "desc"
   end
 

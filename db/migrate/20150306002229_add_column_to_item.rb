@@ -1,7 +1,7 @@
 class AddColumnToItem < ActiveRecord::Migration
   def change
-  	add_column :items, :half, :float
-  	add_column :items, :whole, :float
-  	add_column :items, :full, :float
+  	add_column :items, :half, :string
+  	add_column :items, :whole, :string
+  	add_column :items, :full, :string
   end
 end

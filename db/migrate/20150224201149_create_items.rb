@@ -2,13 +2,13 @@ class CreateItems < ActiveRecord::Migration
   def change
     create_table :items do |t|
       t.string :name
-      t.float :smallC
-      t.float :mediumC
-      t.float :largeC
-      t.float :smallT
-      t.float :mediumT
-      t.float :largeT
-      t.float :each
+      t.string :smallC
+      t.string :mediumC
+      t.string :largeC
+      t.string :smallT
+      t.string :mediumT
+      t.string :largeT
+      t.string :each
       t.string :misc
       t.string :dish
       t.string :image
