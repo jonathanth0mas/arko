@@ -12,13 +12,17 @@
 	</div>
 	<div class="col-lg-4 cart-selection">
 
+			<div>
+				Size - <%= order_item.size %>
+			</div>
+
 		<%= form_for order_item, remote: true do |f| %>
 
 			<span>Qty: </span><%= f.number_field :quantity, value: order_item.quantity.to_i, class: "qty" %>
-			<di></div>
+			<!-- 
 			<div>
 				<%= f.select :size, options_for_select({"Small (Tray) - #{number_to_currency item.smallT}" => "Small (Tray)", "Medium (Tray) - #{number_to_currency item.mediumT}" => "Medium (Tray)", "Large (Tray) - #{number_to_currency item.largeT}" => "Large (Tray)", "Small (Cup) - #{number_to_currency item.smallC}" => "Small (Cup)", "Medium (Cup) - #{number_to_currency item.mediumC}" => "Medium (Cup)", "Large (Cup) - #{number_to_currency item.largeC}" => "Large (Cup)", "Each - #{number_to_currency item.each}" => "Each", "Half - #{number_to_currency item.half}" => "Half", "Whole - #{number_to_currency item.whole}" => "Whole", "Full - #{number_to_currency item.full}" => "Full"}) %>
-			</div>
+			</div> -->
 
 			<!-- <div>
 				<%= f.select :unit_price, options_for_select({"Small (Tray) - #{number_to_currency item.smallT}" => "#{item.smallT}", "Medium (Tray) - #{number_to_currency item.mediumT}" => "#{item.mediumT}", "Large (Tray) - #{number_to_currency item.largeT}" => "#{item.largeT}", "Small (Cup) - #{number_to_currency item.smallC}" => "#{item.smallC}", "Medium (Cup) - #{number_to_currency item.mediumC}" => "#{item.mediumC}", "Large (Cup) - #{number_to_currency item.largeC}" => "#{item.largeC}", "Each - #{number_to_currency item.each}" => "#{item.each}", "Half - #{number_to_currency item.half}" => "#{item.half}", "Whole - #{number_to_currency item.whole}" => "#{item.whole}", "Full - #{number_to_currency item.full}" => "#{item.full}"}) %>
