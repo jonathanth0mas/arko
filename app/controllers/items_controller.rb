@@ -25,7 +25,7 @@ class ItemsController < ApplicationController
 	def update
 		@item = Item.find(params[:id])
 		if @item.update_attributes(item_params)
-			redirect_to items_path
+			redirect_to list_path
 		else
 			render :edit
 		end
@@ -33,6 +33,13 @@ class ItemsController < ApplicationController
 
 	def list 
 		@items = Item.where(dish: params[:dish])
+	end
+
+	def destroy
+		@item = Item.find(params[:id])
+		if @item.destroy
+			redirect_to list_path
+		end
 	end
 
 	private

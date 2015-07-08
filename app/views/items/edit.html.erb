@@ -4,6 +4,7 @@
 		<div class="row">
 			<h1 class="text-center">Update Item!</h1>
 			<div class="col-lg-offset-2 col-lg-5">
+				<%= link_to "Delete Item", item_path(@item), method: :delete %>
 				<img src="<%= @item.image %>" width="450" height="400">
 				<div>
 				<%= link_to "Back to list", list_path %>
