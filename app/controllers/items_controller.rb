@@ -42,6 +42,12 @@ class ItemsController < ApplicationController
 		end
 	end
 
+	# def available
+	# 	items = Item.where(dish: params[:dish])
+	# 	items.update_all(active: true);
+	# 	redirect_to list_path
+	# end
+
 	private
 
 	def item_params

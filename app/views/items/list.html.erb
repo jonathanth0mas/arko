@@ -12,10 +12,12 @@
 
 	</div>
 	
+	
 		<% @items.each do |item| %>
 
 		<div class="text-center">
 		<%= item.name %> - <%= link_to "Edit", edit_item_path(item.id) %>
+		<%= check_box_tag @items %>
 		</div>
 
 		<% end %>

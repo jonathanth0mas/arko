@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   resources :orders, only: [:index]
 
   match 'orders/complete' => 'orders#complete', :via => :post
+  # match 'items/available' => 'items#available', :via => :post
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

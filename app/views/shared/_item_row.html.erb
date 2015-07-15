@@ -20,8 +20,9 @@
 		<div>
 		<%= f.select :size, options_for_select({"Small (Tray) - #{number_to_currency item.smallT}" => "Small (Tray)", "Medium (Tray) - #{number_to_currency item.mediumT}" => "Medium (Tray)", "Large (Tray) - #{number_to_currency item.largeT}" => "Large (Tray)", "Small (Cup) - #{number_to_currency item.smallC}" => "Small (Cup)", "Medium (Cup) - #{number_to_currency item.mediumC}" => "Medium (Cup)", "Large (Cup) - #{number_to_currency item.largeC}" => "Large (Cup)", "Each - #{number_to_currency item.each}" => "Each", "Half - #{number_to_currency item.half}" => "Half", "Whole - #{number_to_currency item.whole}" => "Whole", "Full - #{number_to_currency item.full}" => "Full", "Misc - #{item.misc}" => "#{item.misc}"  }) %>
 		</div>
+
 		<div>
-	 	<%= f.submit "Add to Order", class: "btn btn-primary o-btn" %>
+	 		<%= f.submit "Add to Order", class: "btn btn-primary o-btn" %>
 	 	</div>
 
 	<% end %>
