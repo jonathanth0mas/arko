@@ -10,6 +10,7 @@ class OrdersController < ApplicationController
 		@order.update_attribute(:confirmed, true)
 	    @order.update_attributes(order_parameters)
 	    if @order.save
+	    	UserNotifier.send_order_email.deliver
 	    	flash[:notice] = "An order is placed" 
 	    end
   	end
