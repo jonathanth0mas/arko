@@ -4,7 +4,7 @@ class UserNotifier < ApplicationMailer
 
 	  # send a signup email to the user, pass in the user object that   contains the user's email address
 	  def send_order_email
-	    mail( :to => 'yangdongkevin@gmail.com'
+	    mail( :to => 'ashley@asiancomco.com',
 	    :subject => 'Order' )
 	  end
 end
