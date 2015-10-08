@@ -1,7 +1,7 @@
 class OrdersController < ApplicationController
 
 	def index
-		@orders = Order.where("created_at > ? AND created_at < ? AND confirmed = ?", Time.now.beginning_of_day, Time.now.end_of_day, true)
+		@orders = Order.where("created_at > ? AND created_at < ? AND confirmed = ?", Time.now.beginning_of_day, 3.days.from_now, true)
 	end
 
 	def complete
