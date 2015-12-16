@@ -1,7 +1,7 @@
 class OrdersController < ApplicationController
 
 	def index
-		@orders = Order.where("created_at > ? AND created_at < ? AND confirmed = ?", Time.now.beginning_of_day, 3.days.from_now, true)
+		@orders = Order.all
 	end
 
 	def complete
@@ -13,7 +13,14 @@ class OrdersController < ApplicationController
 	    	UserNotifier.send_order_email.deliver
 	    	flash[:notice] = "An order is placed" 
 	    end
-  	end
+  end
+
+  def destroy
+    @order = Order.find(params[:id])
+    if @order.destroy
+      redirect_to orders_path
+    end
+  end
 
   private
 

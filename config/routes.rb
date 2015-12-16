@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   
   resource :cart, only: [:show]
   resources :order_items, only: [:create, :update, :destroy]
-  resources :orders, only: [:index]
+  resources :orders, only: [:index, :destroy]
 
   match 'orders/complete' => 'orders#complete', :via => :post
   # match 'items/available' => 'items#available', :via => :post

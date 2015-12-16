@@ -15,9 +15,10 @@
 			<div class="pickup">
 				<h2>Order Number: <%= order.id %></h2> <p>Placed At: <%= order.created_at.getlocal.strftime("%D - %I:%M%p") %></p>
 				<p>Pick Up Date & Time: <span class="order-span"><%= order.date %></span class="order-span"> - <span class="order-span"><%= order.time %></span class="order-span"></p>
+				<%= link_to "Delete Order", order_path(order), method: :delete %>
 			</div>
-			<div class="order-index">
 
+			<div class="order-index">
 					<div class="col-lg-4 text-center user-info">
 						<span class="glyphicon glyphicon-user"></span> <%= order.user.first %> <%= order.user.last %>
 					</div>
@@ -27,7 +28,6 @@
 					<div class="col-lg-4 text-center user-info">
 						<span class="glyphicon glyphicon-earphone"></span> <%= order.user.phone_number %>
 					</div>
-
 					<% order.order_items.each do |order| %>
 						<div class="row">
 							<div class="col-lg-4 text-center">
